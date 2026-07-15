@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Campar Química – Sete Lagoas</title>
+<meta name="description" content="Catálogo de produtos de limpeza profissional Campar Química – Sete Lagoas, MG. Limpeza geral, automotivo, lavanderia e mais. Faça seu pedido pelo WhatsApp.">
+<meta property="og:title" content="Campar Química – Catálogo de Produtos">
+<meta property="og:description" content="Produtos de limpeza profissional para uso doméstico, automotivo e industrial. Peça pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="campar_img/logo.png">
+<style>
+  :root{
+    --az:#0D3187;--az2:#1752C8;--ciano:#00B4D8;--ciano2:#0096B4;
+    --bg:#F0F5FF;--card:#fff;--texto:#1a1a2e;--sub:#555;
+    --preco:#0D3187;--borda:#D0DCEF;--raio:14px;
+    --sombra:0 2px 16px rgba(13,49,135,.10);
+    --sombra-h:0 6px 28px rgba(13,49,135,.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--texto);min-height:100vh}
+
+  /* ── HEADER ── */
+  header{
+    background:linear-gradient(135deg,var(--az) 0%,var(--az2) 100%);
+    padding:0;position:sticky;top:0;z-index:100;
+    box-shadow:0 2px 12px rgba(0,0,0,.25);
+  }
+  .header-top{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:10px 16px;gap:10px;
+  }
+  .logo-wrap img{height:46px;object-fit:contain}
+  .header-title{flex:1;text-align:center}
+  .header-title h1{font-size:1.05rem;font-weight:700;color:#fff;line-height:1.2}
+  .header-title p{font-size:.72rem;color:#9CC4E4;margin-top:1px}
+  .cart-btn{
+    position:relative;background:var(--ciano);border:none;color:#fff;
+    border-radius:50%;width:44px;height:44px;font-size:1.2rem;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 2px 8px rgba(0,180,216,.4);flex-shrink:0;
+    transition:transform .15s;
+  }
+  .cart-btn:active{transform:scale(.92)}
+  .cart-badge{
+    position:absolute;top:-4px;right:-4px;background:#FF3B3B;
+    color:#fff;border-radius:50%;width:20px;height:20px;
+    font-size:.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;
+    display:none;
+  }
+
+  /* ── FILTROS ── */
+  .cats-bar{
+    display:flex;gap:8px;padding:10px 16px 10px;overflow-x:auto;
+    scrollbar-width:none;background:linear-gradient(135deg,var(--az) 0%,var(--az2) 100%);
+  }
+  .cats-bar::-webkit-scrollbar{display:none}
+  .cat-pill{
+    flex-shrink:0;background:rgba(255,255,255,.15);color:#fff;
+    border:1.5px solid rgba(255,255,255,.25);border-radius:20px;
+    padding:6px 14px;font-size:.78rem;font-weight:600;cursor:pointer;
+    white-space:nowrap;transition:all .2s;
+  }
+  .cat-pill.ativo{background:var(--ciano);border-color:var(--ciano);color:#fff;box-shadow:0 2px 10px rgba(0,180,216,.5)}
+
+  /* ── BUSCA ── */
+  .search-wrap{padding:14px 16px 4px}
+  .search-wrap input{
+    width:100%;border:1.5px solid var(--borda);border-radius:30px;
+    padding:10px 18px;font-size:.9rem;background:#fff;color:var(--texto);
+    outline:none;transition:border-color .2s;
+  }
+  .search-wrap input:focus{border-color:var(--ciano)}
+
+  /* ── GRID PRODUTOS ── */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(165px,1fr));
+    gap:14px;padding:14px 16px 100px;
+  }
+  @media(min-width:600px){
+    .grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;padding:18px 24px 120px}
+  }
+  @media(min-width:900px){
+    .grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;padding:20px 32px 120px}
+  }
+
+  /* ── CARD ── */
+  .card{
+    background:var(--card);border-radius:var(--raio);
+    box-shadow:var(--sombra);overflow:hidden;
+    display:flex;flex-direction:column;
+    transition:box-shadow .2s,transform .2s;cursor:pointer;
+    border:1.5px solid var(--borda);
+  }
+  .card:hover{box-shadow:var(--sombra-h);transform:translateY(-3px)}
+  .card-img{
+    background:linear-gradient(160deg,#EEF4FF 0%,#F8FBFF 100%);
+    display:flex;align-items:center;justify-content:center;
+    padding:16px 12px 10px;min-height:160px;position:relative;
+  }
+  .card-img img{
+    max-height:140px;max-width:100%;object-fit:contain;
+    display:block;filter:drop-shadow(0 4px 10px rgba(0,0,0,.12));
+  }
+  .cat-tag{
+    position:absolute;top:8px;left:8px;
+    background:var(--ciano);color:#fff;
+    font-size:.6rem;font-weight:700;padding:2px 8px;border-radius:10px;
+    text-transform:uppercase;letter-spacing:.5px;
+  }
+  .card-body{padding:12px 14px 14px;flex:1;display:flex;flex-direction:column}
+  .card-nome{font-size:.9rem;font-weight:700;color:var(--az);line-height:1.25;margin-bottom:2px}
+  .card-sub{font-size:.72rem;color:var(--ciano2);font-style:italic;margin-bottom:6px;line-height:1.3}
+  .card-desc{font-size:.78rem;color:var(--sub);line-height:1.45;flex:1;margin-bottom:10px;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .card-precos{margin-bottom:10px}
+  .preco-item{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:3px 0;border-bottom:1px solid #EEF2FF;
+  }
+  .preco-item:last-child{border-bottom:none}
+  .preco-tam{font-size:.72rem;color:var(--sub)}
+  .preco-val{font-size:.82rem;font-weight:700;color:var(--preco)}
+  .preco-cod{font-size:.6rem;color:#aaa}
+  .add-btn{
+    width:100%;padding:9px;border:none;border-radius:10px;
+    background:linear-gradient(135deg,var(--az) 0%,var(--az2) 100%);
+    color:#fff;font-size:.82rem;font-weight:700;cursor:pointer;
+    transition:opacity .2s,transform .15s;display:flex;align-items:center;justify-content:center;gap:6px;
+  }
+  .add-btn:active{transform:scale(.96);opacity:.9}
+
+  /* ── MODAL PRODUTO ── */
+  .overlay{
+    display:none;position:fixed;inset:0;background:rgba(5,15,50,.6);
+    z-index:200;backdrop-filter:blur(3px);align-items:flex-end;
+    justify-content:center;
+  }
+  .overlay.open{display:flex}
+  .modal{
+    background:#fff;border-radius:22px 22px 0 0;width:100%;max-width:520px;
+    max-height:92vh;overflow-y:auto;padding:0 0 24px;
+    animation:slideUp .3s ease;
+  }
+  @keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+  .modal-header{
+    position:sticky;top:0;background:#fff;padding:16px 16px 10px;
+    border-bottom:1px solid #EEF2FF;display:flex;align-items:center;gap:12px;z-index:10;
+  }
+  .modal-close{
+    background:none;border:none;font-size:1.4rem;cursor:pointer;color:#888;
+    width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+    border-radius:50%;flex-shrink:0;
+  }
+  .modal-close:hover{background:#f0f4ff}
+  .modal-img{
+    background:linear-gradient(160deg,#EEF4FF 0%,#F8FBFF 100%);
+    display:flex;align-items:center;justify-content:center;padding:24px;min-height:200px;
+  }
+  .modal-img img{max-height:200px;max-width:100%;object-fit:contain;filter:drop-shadow(0 6px 16px rgba(0,0,0,.15))}
+  .modal-body{padding:0 20px}
+  .modal-nome{font-size:1.15rem;font-weight:700;color:var(--az);margin-bottom:4px;margin-top:16px}
+  .modal-sub{font-size:.82rem;color:var(--ciano2);font-style:italic;margin-bottom:12px}
+  .modal-desc{font-size:.87rem;color:#333;line-height:1.6;margin-bottom:16px}
+  .modal-precos{background:#F0F5FF;border-radius:12px;padding:14px;margin-bottom:16px}
+  .modal-precos h4{font-size:.78rem;color:var(--sub);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+  .modal-preco-row{
+    display:flex;flex-direction:column;gap:8px;
+    padding:10px 0;border-bottom:1px solid #D8E4F5;
+  }
+  .modal-preco-row:last-child{border-bottom:none}
+  .mp-top{display:flex;align-items:center;justify-content:space-between}
+  .mp-bottom{display:flex;align-items:center;justify-content:space-between}
+  .mp-left{display:flex;flex-direction:column}
+  .mp-tam{font-size:.82rem;font-weight:600;color:var(--az)}
+  .mp-cod{font-size:.68rem;color:#999}
+  .mp-val{font-size:1rem;font-weight:700;color:var(--preco)}
+  .mp-add{
+    background:var(--az2);color:#fff;border:none;border-radius:8px;
+    padding:6px 14px;font-size:.78rem;font-weight:700;cursor:pointer;
+    transition:background .2s;
+  }
+  .mp-add:active{background:var(--az)}
+  .mp-add.consulte,.add-btn.consulte{background:linear-gradient(135deg,var(--ciano2),var(--ciano))}
+
+  /* ── QTD STEPPER ── */
+  .mp-qty,.ci-qty{display:flex;align-items:center;gap:8px}
+  .qty-btn{
+    width:26px;height:26px;border-radius:50%;border:1.5px solid var(--borda);
+    background:#fff;color:var(--az);font-size:1rem;font-weight:700;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;line-height:1;flex-shrink:0;
+  }
+  .qty-btn:active{background:#EEF4FF}
+  .qty-val{min-width:18px;text-align:center;font-size:.85rem;font-weight:700;color:var(--texto)}
+  .ci-qty{margin-top:4px}
+  .ci-qty .qty-btn{width:22px;height:22px;font-size:.85rem}
+  .ci-qty .qty-val{font-size:.78rem}
+
+  /* ── CARRINHO ── */
+  .cart-overlay{
+    display:none;position:fixed;inset:0;background:rgba(5,15,50,.6);
+    z-index:300;backdrop-filter:blur(3px);align-items:flex-end;justify-content:center;
+  }
+  .cart-overlay.open{display:flex}
+  .cart-modal{
+    background:#fff;border-radius:22px 22px 0 0;width:100%;max-width:520px;
+    max-height:90vh;overflow-y:auto;padding:0 0 24px;
+    animation:slideUp .3s ease;
+  }
+  .cart-header{
+    position:sticky;top:0;background:#fff;padding:16px 20px 12px;
+    border-bottom:1px solid #EEF2FF;display:flex;align-items:center;justify-content:space-between;z-index:10;
+  }
+  .cart-header h2{font-size:1.05rem;font-weight:700;color:var(--az)}
+  .cart-empty{text-align:center;padding:48px 20px;color:#aaa;font-size:.9rem}
+  .cart-items{padding:12px 20px}
+  .cart-item{
+    display:flex;gap:12px;align-items:center;padding:12px 0;
+    border-bottom:1px solid #EEF2FF;
+  }
+  .ci-img{width:52px;height:52px;object-fit:contain;background:#F0F5FF;border-radius:10px;padding:4px}
+  .ci-info{flex:1}
+  .ci-nome{font-size:.85rem;font-weight:700;color:var(--az);line-height:1.2}
+  .ci-tam{font-size:.72rem;color:var(--sub)}
+  .ci-preco{font-size:.85rem;font-weight:700;color:var(--preco);text-align:right}
+  .ci-remove{
+    background:none;border:none;color:#ccc;font-size:1.1rem;cursor:pointer;padding:4px;
+    transition:color .2s;
+  }
+  .ci-remove:hover{color:#ff3b3b}
+  .cart-total{
+    padding:14px 20px;border-top:2px solid #EEF2FF;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .total-label{font-size:.85rem;color:var(--sub)}
+  .total-val{font-size:1.2rem;font-weight:700;color:var(--az)}
+  .wa-btn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    width:calc(100% - 40px);margin:4px 20px 0;
+    padding:15px;border:none;border-radius:14px;
+    background:linear-gradient(135deg,#25D366,#128C7E);
+    color:#fff;font-size:1rem;font-weight:700;cursor:pointer;
+    box-shadow:0 4px 16px rgba(37,211,102,.35);
+    transition:opacity .2s,transform .15s;
+  }
+  .wa-btn:active{transform:scale(.97);opacity:.92}
+  .wa-icon{width:26px;height:26px}
+
+  /* ── TOAST ── */
+  .toast{
+    position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--az);color:#fff;padding:10px 22px;border-radius:24px;
+    font-size:.82rem;font-weight:600;opacity:0;transition:all .3s;z-index:500;
+    white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.2);
+  }
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* ── VAZIO ── */
+  .no-results{text-align:center;padding:60px 20px;color:#aaa;font-size:.9rem;grid-column:1/-1}
+
+  /* ── WHATSAPP FLUTUANTE ── */
+  .wa-fab{
+    position:fixed;right:16px;bottom:16px;z-index:150;
+    width:56px;height:56px;border-radius:50%;border:none;
+    background:linear-gradient(135deg,#25D366,#128C7E);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 16px rgba(37,211,102,.45);
+    cursor:pointer;transition:transform .15s;
+  }
+  .wa-fab:active{transform:scale(.92)}
+  .wa-fab svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo-wrap"><img src="campar_img/logo.png" alt="Campar Química"></div>
+    <div class="header-title">
+      <h1>Campar Química</h1>
+      <p>Sete Lagoas · MG</p>
+    </div>
+    <button class="cart-btn" onclick="abrirCarrinho()" aria-label="Carrinho">
+      🛒
+      <span class="cart-badge" id="cartBadge">0</span>
+    </button>
+  </div>
+  <div class="cats-bar" id="catsBar">
+    <button class="cat-pill ativo" data-cat="Todos" onclick="filtrarCat(this,'Todos')">Todos</button>
+    <button class="cat-pill" data-cat="Limpeza Geral" onclick="filtrarCat(this,'Limpeza Geral')">🧹 Limpeza Geral</button>
+    <button class="cat-pill" data-cat="Automotivo" onclick="filtrarCat(this,'Automotivo')">🚗 Automotivo</button>
+    <button class="cat-pill" data-cat="Lavanderia" onclick="filtrarCat(this,'Lavanderia')">👕 Lavanderia</button>
+    <button class="cat-pill" data-cat="Especial" onclick="filtrarCat(this,'Especial')">⭐ Especial</button>
+    <button class="cat-pill" data-cat="Limpeza de Piso" onclick="filtrarCat(this,'Limpeza de Piso')">✨ Limpeza de Piso</button>
+    <button class="cat-pill" data-cat="Limpeza de Piscina" onclick="filtrarCat(this,'Limpeza de Piscina')">🏊 Limpeza de Piscina</button>
+  </div>
+</header>
+
+<div class="search-wrap">
+  <input type="search" id="busca" placeholder="🔍  Buscar produto..." oninput="filtrar()" autocomplete="off">
+</div>
+
+<div class="grid" id="grid"></div>
+
+<!-- MODAL PRODUTO -->
+<div class="overlay" id="modalOverlay" onclick="fecharModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <button class="modal-close" onclick="fecharModalBtn()">✕</button>
+      <span style="font-size:.75rem;color:#aaa;font-style:italic" id="modalCat"></span>
+    </div>
+    <div class="modal-img"><img id="modalImg" src="" alt=""></div>
+    <div class="modal-body">
+      <div class="modal-nome" id="modalNome"></div>
+      <div class="modal-sub" id="modalSub"></div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <div class="modal-precos">
+        <h4>Tamanhos e preços</h4>
+        <div id="modalPrecos"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARRINHO -->
+<div class="cart-overlay" id="cartOverlay" onclick="fecharCarrinhoEv(event)">
+  <div class="cart-modal">
+    <div class="cart-header">
+      <h2>🛒 Meu Pedido</h2>
+      <button class="modal-close" onclick="fecharCarrinho()">✕</button>
+    </div>
+    <div id="cartContent"></div>
+  </div>
+</div>
+
+<button class="wa-fab" onclick="abrirWhatsAppGeral()" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.121.555 4.112 1.528 5.837L.057 23.888l6.218-1.448A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.848 0-3.57-.502-5.051-1.378l-.361-.214-3.741.87.936-3.618-.235-.374A9.966 9.966 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+</button>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const PRODUTOS = [
+{id:"amoniex",cat:"Limpeza Geral",nome:`Amoniex`,sub:`Detergente Amoniacal`,desc:`Remove sujeiras pesadas de roupas, tapetes, azulejos, coifas, exaustores, fornos e fogões. Também limpa fuligem e lodo em cerâmicas, granitos e mármores — quando o produto comum não resolve, o Amoniex resolve.`,precos:[["2L", "R$ 19,99", "COD 20358"], ["5L", "R$ 39,99", "COD 20356"], ["20L / 50L", "Consulte", ""]],img:"campar_img/amoniex.jpg"},
+{id:"detmais",cat:"Limpeza Geral",nome:`Detmais`,sub:`Detergente Neutro`,desc:`O parceiro do dia a dia para limpeza de qualquer superfície. Fórmula neutra que limpa sem agredir, sem deixar resíduos e sem danificar o que você está limpando.`,precos:[["500mL", "R$ 4,99", "COD 20349"], ["2L", "Consulte", ""], ["5L", "R$ 29,99", "COD 20350"], ["20L / 50L", "Consulte", ""]],img:"campar_img/detmais.jpg"},
+{id:"chapexo",cat:"Limpeza Geral",nome:`Chapexo`,sub:`Desincrustante de Chapas, Coifas e Exaustores`,desc:`Especialista em desincrustação de superfícies metálicas com gordura e óleos impregnados. Ideal para cozinhas que precisam de limpeza profunda nas chapas, coifas e exaustores. Dissolve o que outros produtos deixam pra trás.`,precos:[["5L", "R$ 78,00", ""]],img:"campar_img/chapexo.jpg"},
+{id:"nullbac",cat:"Limpeza Geral",nome:`Nullbac`,sub:`Limpador Instantâneo`,desc:`Limpeza imediata antes e depois do uso de equipamentos, bancadas, paredes e pisos. Ação rápida e efeito prolongado — ideal para ambientes de alto tráfego que exigem higiene constante.`,precos:[["5L", "R$ 78,99", "COD 20280"]],img:"campar_img/nullbac.jpg"},
+{id:"easy_clean",cat:"Limpeza Geral",nome:`Easy Clean`,sub:`Flotador Multiuso – Limpeza Pesada`,desc:`Formulado para flotação e desagregação de partículas de sujidade nas superfícies de equipamentos mecânicos. Quando a sujeira está impregnada e os produtos comuns não chegam lá, o Easy Clean faz o trabalho.`,precos:[["5L / 20L / 50L", "Consulte", ""]],img:"campar_img/easy_clean.jpg"},
+{id:"gel_mix_pinho",cat:"Limpeza Geral",nome:`Gel Mix Pinho`,sub:`Detergente Gel`,desc:`Alto poder de solubilização de óleos, gorduras e graxas com aroma fresco de pinho. Indicado para azulejos, banheiros, pisos e sanitários. Gel de alta viscosidade que adere à superfície e age melhor.`,precos:[["2L / 5L", "Consulte", ""]],img:"campar_img/gel_mix_pinho.jpg"},
+{id:"gel_mix_lavanda",cat:"Limpeza Geral",nome:`Gel Mix Lavanda`,sub:`Detergente Gel`,desc:`Mesma potência do Gel Mix com aroma suave de lavanda. Limpa azulejos, banheiros e sanitários com eficiência, deixando o ambiente com perfume relaxante.`,precos:[["2L / 5L", "Consulte", ""]],img:"campar_img/gel_mix_lavanda.jpg"},
+{id:"forno_sd",cat:"Limpeza Geral",nome:`Forno SD`,sub:`Limpa Forno`,desc:`Desenvolvido especialmente para fornos domésticos e industriais. Alto poder de penetração para dissolver gorduras carbonizadas e óleos acumulados. Aplica, aguarda e retira — sem precisar esfregar com força.`,precos:[["1L", "R$ 22,99", "COD 20395"], ["2L / 5L", "Consulte", ""]],img:"campar_img/forno_sd.jpg"},
+{id:"limpa_telhas",cat:"Limpeza Geral",nome:`Limpa Telhas e Fachadas Master`,sub:`Desincrustante Externo`,desc:`Remove sujidades, manchas escuras e incrustações em telhados, fachadas e muros. Recupera o visual limpo e conservado do exterior do imóvel, devolvendo a aparência original das superfícies.`,precos:[["2L / 5L", "Consulte", ""]],img:"campar_img/limpa_telhas.jpg"},
+{id:"vitrix",cat:"Limpeza Geral",nome:`Vitrix`,sub:`Limpa Vidros`,desc:`Limpa e proporciona brilho intenso a cristais, espelhos e vidros. Remove manchas de água, gordura e poeira sem deixar resíduos ou listras. Resultado profissional em uso doméstico.`,precos:[["500mL", "R$ 10,99", "COD 20394"], ["1L / 2L", "Consulte", ""], ["5L", "R$ 49,99", "COD 20281"]],img:"campar_img/vitrix.jpg"},
+{id:"tapetex",cat:"Limpeza Geral",nome:`Tapetex`,sub:`Limpa Carpete`,desc:`Ideal para limpeza e conservação de bancos de veículos, camurça, carpetes e tapetes em geral. Remove manchas e odores, refresca as fibras e devolve aparência limpa sem molhar em excesso.`,precos:[["1L", "Consulte", ""], ["2L", "R$ 25,00", "COD 20495"], ["5L", "R$ 55,00", "COD 20496"]],img:"campar_img/tapetex.jpg"},
+{id:"proquimol",cat:"Limpeza Geral",nome:`Proquimol`,sub:`Desengraxante Neutro`,desc:`Para a limpeza pesada de bancadas, baús, caixas de transporte, cerâmicas, paredes e pisos. Corta gordura e óleo com eficiência sem danificar as superfícies.`,precos:[["5L / 50L", "Consulte", ""]],img:"campar_img/proquimol.jpg"},
+{id:"multicamp",cat:"Limpeza Geral",nome:`Multicamp`,sub:`Limpador Multiuso`,desc:`Versátil e eficiente para limpeza e conservação de paredes, pisos e superfícies em geral. Um produto só que resolve a maioria das situações do dia a dia — doméstico, comercial e industrial.`,precos:[["500mL", "R$ 6,99", "COD 20341"], ["2L", "R$ 19,00", "COD 20342"], ["5L", "R$ 41,00", "COD 20343"], ["20L / 50L", "Consulte", ""]],img:"campar_img/multicamp.jpg"},
+{id:"polimov",cat:"Limpeza Geral",nome:`Polimov`,sub:`Lustra Móveis`,desc:`Formulação concentrada de alto rendimento que limpa, lubrifica, protege e dá brilho duradouro para seus móveis. Deixa as superfícies com aparência renovada e protegidas contra o ressecamento.`,precos:[["500mL", "R$ 16,99", "COD 20332"]],img:"campar_img/polimov.jpg"},
+{id:"pasta_brilho",cat:"Limpeza Geral",nome:`Pasta Brilho Panelas`,sub:`Abrilhantador de Alumínio`,desc:`Indicada para limpeza e abrilhantamento de panelas, talheres e utensílios de alumínio. Remove manchas escuras, oxidação e resíduos de queimado, devolvendo o brilho original.`,precos:[["500g", "Consulte", ""], ["1kg", "R$ 19,00", "COD 20497"]],img:"campar_img/pasta_brilho.jpg"},
+{id:"campdesin_eucalipto",cat:"Limpeza Geral",nome:`Campdesin Eucalipto`,sub:`Desinfetante Profissional`,desc:`Desinfetante de uso geral com aroma fresco de eucalipto. Limpa, desinfeta e perfuma ambientes domésticos, comerciais e industriais. Ação bactericida com fragrância que refresca qualquer espaço.`,precos:[["2L", "R$ 14,99", "COD 20340"], ["5L", "R$ 27,99", "COD 20433"]],img:"campar_img/campdesin_eucalipto.jpg"},
+{id:"campdesin_lavanda",cat:"Limpeza Geral",nome:`Campdesin Lavanda`,sub:`Desinfetante Profissional`,desc:`Desinfetante com aroma suave de lavanda. Combina eficiência bactericida real com fragrância que transforma a sensação do ambiente. Ideal para banheiros, quartos e áreas de circulação.`,precos:[["5L", "R$ 28,00", "COD 20284"]],img:"campar_img/campdesin_lavanda.jpg"},
+{id:"campdesin_floral",cat:"Limpeza Geral",nome:`Campdesin Floral`,sub:`Desinfetante Profissional`,desc:`Desinfetante com aroma floral delicado. Limpeza e desinfecção eficientes com o perfume que deixa qualquer ambiente com cara de limpo e cheiro de fresco.`,precos:[["2L / 5L", "Consulte", ""]],img:"campar_img/campdesin_floral.jpg"},
+{id:"limpador_orvalho",cat:"Limpeza Geral",nome:`Limpador Perfumado Orvalho`,sub:`Limpador de Pisos e Superfícies`,desc:`Fórmula equilibrada para limpeza eficiente de pisos, bancadas e paredes com a fragrância suave e fresca de orvalho. Limpa sem agredir e deixa o ambiente com aroma agradável por mais tempo.`,precos:[["2L", "R$ 14,99", "COD 20338"], ["5L", "R$ 27,99", "COD 20434"]],img:"campar_img/limpador_orvalho.jpg"},
+{id:"limpador_talco",cat:"Limpeza Geral",nome:`Limpador Perfumado Talco`,sub:`Limpador de Pisos e Superfícies`,desc:`Limpeza eficiente com a fragrância clássica, suave e aconchegante de talco. Muito usado em ambientes residenciais e comerciais que buscam limpeza real com perfume que agrada a todos.`,precos:[["2L", "R$ 14,99", "COD 20337"]],img:"campar_img/limpador_talco.jpg"},
+{id:"limpador_perfumado",cat:"Limpeza Geral",nome:`Limpador Perfumado`,sub:`Eucalipto · Floral · Lavanda · Destak · Divi · Pinho`,desc:`Linha completa de limpadores perfumados para pisos e superfícies. Cada fragrância oferece a mesma eficiência de limpeza com um aroma diferente. Escolha o que combina com o seu espaço.`,precos:[["2L", "R$ 14,99", ""]],img:"campar_img/limpador_perfumado.jpg"},
+{id:"bio_brilho_gel",cat:"Automotivo",nome:`Bio Brilho Gel`,sub:`Brilha Painel Siliconado`,desc:`Produto siliconado em gel para limpar, conservar e renovar superfícies plásticas e emborrachadas do interior do veículo. Deixa o painel com visual de carro novo, protegendo contra ressecamento.`,precos:[["500mL", "Consulte", ""]],img:"campar_img/bio_brilho_gel.jpg"},
+{id:"bio_brilho_liq",cat:"Automotivo",nome:`Bio Brilho Líquido`,sub:`Brilha Painel Siliconado`,desc:`Versão líquida para uma aplicação rápida e fácil. Renova e protege superfícies plásticas e emborrachadas, devolvendo brilho com aparência renovada. Ideal para uso cotidiano.`,precos:[["500mL", "R$ 28,00", "COD 20541"]],img:"campar_img/bio_brilho_liq.jpg"},
+{id:"desengraxante_rs",cat:"Automotivo",nome:`Desengraxante RS`,sub:`Desengraxante Rosa Alcalino Concentrado`,desc:`Alta performance para limpeza pesada, média ou leve de equipamentos e superfícies com acúmulo de óleo e graxa. A diluição se ajusta ao nível de sujidade, do serviço mais leve ao mais pesado.`,precos:[["2L / 5L / 20L / 50L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"pneu_premium",cat:"Automotivo",nome:`Pneu Premium`,sub:`Brilha Pneus`,desc:`Proporciona brilho intenso e proteção prolongada para os pneus. Fácil de aplicar e com efeito duradouro — pneu escuro e brilhante por muito mais tempo.`,precos:[["1L", "R$ 16,00", "COD 20535"], ["2L / 5L / 20L / 50L", "Consulte", ""]],img:"campar_img/pneu_premium.jpg"},
+{id:"autolav_cera",cat:"Automotivo",nome:`Autolav Com Cera`,sub:`Detergente Automotivo`,desc:`Lava e encera ao mesmo tempo — realça o brilho da pintura e facilita a aplicação. Não agride cromados, borrachas e vidros. Lavagem completa em um só produto.`,precos:[["2L", "R$ 25,00", "COD 20513"], ["5L / 50L", "Consulte", ""]],img:"campar_img/autolav_cera.jpg"},
+{id:"autolav_comum",cat:"Automotivo",nome:`Autolav Comum`,sub:`Detergente Automotivo`,desc:`Detergente específico para lavagem de todo tipo de veículo. Fórmula suave que não agride cromados, borrachas e vidros, garantindo lavagem segura e resultado limpo.`,precos:[["2L / 5L / 50L", "Consulte", ""]],img:"campar_img/autolav_comum.jpg"},
+{id:"cimecap",cat:"Automotivo",nome:`Cimecap`,sub:`Desincrustante de Cimento`,desc:`Remove incrustações de cimento em veículos, equipamentos industriais e tubulações. Essencial para obras e ambientes de construção onde o cimento gruda em tudo.`,precos:[["5L", "R$ 79,99", "COD 20422"], ["50L", "Consulte", ""]],img:"campar_img/cimecap.jpg"},
+{id:"minecap",cat:"Automotivo",nome:`Minecap`,sub:`Desincrustante de Minério`,desc:`Limpeza pesada de veículos e equipamentos com depósito de minério. Alta performance para ambientes de mineração, transportadoras e indústria pesada.`,precos:[["5L / 50L", "Consulte", ""]],img:"campar_img/minecap.jpg"},
+{id:"desengraxante_az",cat:"Automotivo",nome:`Desengraxante AZ`,sub:`Desengraxante Alta Performance`,desc:`Para carros, equipamentos pesados e superfícies com acúmulo de óleo e graxa. Corta sujidade pesada com eficiência. Indicado para oficinas, transportadoras e frotas.`,precos:[["2L / 5L / 20L / 50L", "Consulte", ""]],img:"campar_img/desengraxante_az.jpg"},
+{id:"limpi_alum",cat:"Automotivo",nome:`Limpi-Alum`,sub:`Detergente Clareador de Alumínio`,desc:`Clareia e recupera o brilho de superfícies de alumínio oxidadas ou manchadas. Muito usado em rodas, tanques, peças de caminhões e equipamentos.`,precos:[["2L", "R$ 19,99", "COD 20500"], ["5L / 20L / 50L", "Consulte", ""]],img:"campar_img/limpi_alum.jpg"},
+{id:"biograx",cat:"Automotivo",nome:`Biograx`,sub:`Pasta Desengraxante para Mãos`,desc:`Remove óleo, graxa e sujidades pesadas das mãos após trabalho mecânico. Alto poder desengordurante com fórmula que protege a pele do ressecamento — limpeza profunda sem agredir.`,precos:[["500g / 1kg / 5kg", "Consulte", ""]],img:"campar_img/biograx.jpg"},
+{id:"dex_cap",cat:"Automotivo",nome:`Dex Cap`,sub:`Desengraxante Premium Concentrado 100x`,desc:`Sem ácido, altíssima performance para limpeza e decapagem de carros, motos e equipamentos industriais. Ultra concentrado — rende até 100 vezes mais. Econômico e eficiente.`,precos:[["2L", "R$ 19,99", ""], ["5L / 20L / 50L", "Consulte", ""]],img:"campar_img/dex_cap.jpg"},
+{id:"amaciante",cat:"Lavanderia",nome:`Amaciante Azul e Branco`,sub:`Amaciante de Roupas`,desc:`Penetra profundamente nas fibras dos tecidos, desembaraçando e facilitando a passagem. Roupas mais macias, perfumadas e com toque agradável. Indicado para qualquer tipo de tecido.`,precos:[["2L", "R$ 19,99", "COD 20399"], ["5L", "R$ 39,99", "COD 20400"], ["20L", "Consulte", ""], ["50L", "R$ 229,00", ""]],img:"campar_img/amaciante.jpg"},
+{id:"cloro_liq",cat:"Lavanderia",nome:`Cloro Líquido`,sub:`Desinfetante Hospitalar`,desc:`Indicado para desinfecção hospitalar de superfícies fixas e artigos não críticos. Alta eficiência no controle de micro-organismos em ambientes que exigem higienização rigorosa.`,precos:[["1L", "Consulte", ""], ["2L", "R$ 14,99", "COD 20351"], ["5L", "R$ 32,99", "COD 20352"], ["20L / 50L", "Consulte", ""]],img:"campar_img/cloro_liq.jpg"},
+{id:"agua_sanitaria",cat:"Lavanderia",nome:`Água Sanitária`,sub:`Desinfetante e Alvejante`,desc:`Produto clássico e indispensável. Desinfeta superfícies e equipamentos e branqueia roupas brancas. Versátil, acessível e de eficiência comprovada para uso doméstico e profissional.`,precos:[["1L", "Consulte", ""], ["2L", "R$ 8,99", "COD 20354"], ["5L", "R$ 19,99", ""]],img:"campar_img/agua_sanitaria.jpg"},
+{id:"campast",cat:"Lavanderia",nome:`Campast`,sub:`Pasta Umectante para Roupas`,desc:`Para limpeza pesada de roupas com manchas de óleo, gordura e graxa. Alto poder de penetração nas fibras para solubilizar sujidades que o sabão comum não remove.`,precos:[["2L", "R$ 28,99", "COD 20328"], ["5L", "R$ 59,99", "COD 20329"], ["20L / 50L", "Consulte", ""]],img:"campar_img/campast.jpg"},
+{id:"camplimp",cat:"Lavanderia",nome:`Camplimp Sabão Líquido`,sub:`Sabão Líquido para Roupas`,desc:`Substitui o sabão em pó com praticidade e eficiência. Funciona em qualquer tipo de tecido e evita o amarelamento de roupas brancas. Dissolve facilmente e garante roupas limpas e conservadas.`,precos:[["1L", "Consulte", ""], ["2L", "R$ 15,99", "COD 20387"], ["5L", "R$ 32,99", "COD 20388"], ["20L / 50L", "Consulte", ""]],img:"campar_img/camplimp.jpg"},
+{id:"camplimp_po",cat:"Lavanderia",nome:`Camplimp Sabão em Pó`,sub:`Sabão em Pó para Roupas`,desc:`Alto poder de solubilização de óleos, graxas e gorduras vegetais e animais. Indicado para a limpeza de roupas em geral — uma alternativa em pó ao sabão líquido Camplimp.`,precos:[["1kg / 10kg / 20kg", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"soluban",cat:"Especial",nome:`Soluban`,sub:`Solução para Banheiro Químico`,desc:`Para tratamento de detritos orgânicos em sanitários fixos e portáteis, motor homes e aeronaves. Atua como limpador e desodorizante de alto desempenho, mantendo higiene e eliminando odores fortes.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/soluban.jpg"},
+{id:"arocitro",cat:"Especial",nome:`Arocitro`,sub:`Aromatizante e Inibidor de Odores Fortes`,desc:`Aromatiza e neutraliza odores fortes em ambientes domésticos, comerciais e industriais. Uso puro ou diluído, para quando o cheiro é realmente difícil de disfarçar.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"alcool_liquido_70",cat:"Especial",nome:`Álcool Líquido 70%`,sub:`Higienizante de Superfícies`,desc:`Limpeza e desinfecção de superfícies com eficácia comprovada contra micro-organismos. Versão líquida, ideal para pulverização e higienização rápida.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"stillo",cat:"Especial",nome:`Stillo`,sub:`Soap Líquido – Bamboo · Dove · Erva-Doce · Floral · Herbal · Lavanda · Marine · Pêssego · Phebo · Talco · Trosseaud`,desc:`Soap especial elaborado para lavar e limpar mãos e braços com qualidade e suavidade. Linha ampla de fragrâncias para toaletes e banheiros.`,precos:[["500mL / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"alvejar_mais",cat:"Especial",nome:`Alvejar+`,sub:`Alvejante Líquido`,desc:`Altamente eficaz na remoção de manchas em tecidos brancos e coloridos, para quando a mancha resiste ao sabão e ao amaciante.`,precos:[["2L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"lg401",cat:"Especial",nome:`LG 401 Antimofo`,sub:`Elimina Umidade e Fungos`,desc:`Age eliminando a umidade e os fungos, evitando a proliferação de mofo em paredes, rejuntes e superfícies úmidas.`,precos:[["500mL / 1L / 2L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"butilglicol",cat:"Especial",nome:`Butilglicol`,sub:`Solvente Incolor`,desc:`Alto poder de limpeza sem deixar as superfícies embaçadas. Solvente técnico usado em formulações e limpeza especial.`,precos:[["1L / 2L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"det_neutro_hospitalar",cat:"Especial",nome:`Detergente Neutro Hospitalar`,sub:`Limpeza de Superfícies em Geral`,desc:`Alto poder de solubilização de gorduras vegetais e animais. Indicado para a limpeza de superfícies em ambientes hospitalares e clínicos.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"fog_7201",cat:"Especial",nome:`FOG 7201`,sub:`Álcool Gel Inflamável para Rechaud e Fogareiro`,desc:`Utilizado para queima em rechauds para aquecimento de alimentos, acendimento de churrasqueiras e lareiras.`,precos:[["1L / 5L / 10L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"lg403",cat:"Especial",nome:`LG 403`,sub:`Sabão para Remoção de Sangue`,desc:`Indicado para a remoção de manchas de sangue em superfícies e tecidos.`,precos:[["1L / 2L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"ind_7017",cat:"Especial",nome:`IND 7017`,sub:`Desincrustante para Torres de Resfriamento`,desc:`Limpeza pesada de equipamentos e tubulações industriais com incrustação.`,precos:[["5L / 50L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"ind_7018",cat:"Especial",nome:`IND 7018`,sub:`Antifúngico`,desc:`Indicado para evitar a corrosão e proteger peças ferrosas contra fungos e oxidação.`,precos:[["5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"vaselina",cat:"Especial",nome:`Vaselina Líquida`,sub:`Emoliente e Lubrificante`,desc:`Propriedades desengordurantes, emolientes, espessantes e lubrificantes. Amplamente usado na composição de outros produtos e em aplicações industriais e cosméticas.`,precos:[["1L", "Consulte", ""]],img:"campar_img/vaselina.jpg"},
+{id:"aromar_kaiak",cat:"Especial",nome:`Aromar Kaiak`,sub:`Odorizador de Ambientes`,desc:`Elimina odores e aromatiza ambientes domésticos, comerciais e industriais com a fragrância marcante e fresca do Kaiak. Ideal para recepções e banheiros que precisam causar boa impressão.`,precos:[["1L", "R$ 42,99", "COD 20398"]],img:"campar_img/aromar_kaiak.jpg"},
+{id:"aromar_bamboo",cat:"Especial",nome:`Aromar Bamboo`,sub:`Odorizador de Ambientes`,desc:`Fragrância Bamboo, leve e natural, para ambientes que precisam de frescor e sofisticação. Transforma qualquer espaço com aroma agradável e duradouro.`,precos:[["1L", "R$ 42,99", "COD 20333"]],img:"campar_img/aromar_bamboo.jpg"},
+{id:"aromar_destak",cat:"Especial",nome:`Aromar Destak`,sub:`Odorizador de Ambientes`,desc:`Fragrância Destak com personalidade marcante para quem quer impressionar. Ideal para ambientes comerciais, recepções e espaços onde a primeira impressão importa.`,precos:[["1L", "R$ 51,99", "COD 20397"]],img:"campar_img/aromar_destak.jpg"},
+{id:"aromar_anti_tabaco",cat:"Especial",nome:`Aromar Anti-Tabaco`,sub:`Odorizador de Ambientes`,desc:`Neutraliza o odor de cigarro e aromatiza o ambiente. Ideal para áreas de fumantes, recepções e espaços comerciais que precisam eliminar cheiro forte de tabaco.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"aromar_carro_novo",cat:"Especial",nome:`Aromar Carro Novo`,sub:`Odorizador de Ambientes`,desc:`Fragrância que remete ao cheiro de carro novo. Muito usado em veículos, oficinas e lava-rápidos para deixar o ambiente com aroma marcante.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"aromar_floral",cat:"Especial",nome:`Aromar Floral`,sub:`Odorizador de Ambientes`,desc:`Fragrância floral suave para aromatizar ambientes domésticos, comerciais e industriais com delicadeza.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"aromar_lavanda",cat:"Especial",nome:`Aromar Lavanda`,sub:`Odorizador de Ambientes`,desc:`Fragrância de lavanda, relaxante e duradoura, para aromatizar ambientes domésticos, comerciais e industriais.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"aromar_trosseaud",cat:"Especial",nome:`Aromar Trosseaud`,sub:`Odorizador de Ambientes`,desc:`Fragrância Trosseaud, sofisticada e envolvente, para ambientes que buscam um aroma diferenciado.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"aromar_capim_limao",cat:"Especial",nome:`Aromar Capim Limão`,sub:`Odorizador de Ambientes`,desc:`Fragrância cítrica e refrescante de capim-limão, ideal para deixar o ambiente com sensação de limpeza e frescor.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"aromar_alfazema",cat:"Especial",nome:`Aromar Alfazema`,sub:`Odorizador de Ambientes`,desc:`Fragrância clássica de alfazema, suave e aconchegante, para aromatizar ambientes domésticos e comerciais.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"aromar_marine",cat:"Especial",nome:`Aromar Marine`,sub:`Odorizador de Ambientes`,desc:`Fragrância marine, fresca e marcante, para ambientes que precisam de um aroma limpo e persistente.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"alcool_gel",cat:"Especial",nome:`Álcool 70% Gel`,sub:`Higienizante de Mãos`,desc:`Limpeza e desinfecção das mãos e braços de forma prática e segura. Fórmula gel que não escorre, garante contato prolongado com a pele e elimina micro-organismos com eficiência.`,precos:[["500mL", "R$ 10,99", "COD 20396"], ["5L", "R$ 71,99", "COD 20402"]],img:"campar_img/alcool_gel.jpg"},
+{id:"alcool_92",cat:"Especial",nome:`Álcool 92,8% Líquido`,sub:`Limpeza Geral e Solvente`,desc:`Para limpeza geral de superfícies e como adjuvante, solvente e veículo para fabricação de outros produtos. Alta concentração para uso profissional.`,precos:[["1L", "R$ 15,99", "COD 20521"], ["5L", "R$ 68,00", "COD 20520"]],img:"campar_img/alcool_92.jpg"},
+{id:"soap_det",cat:"Especial",nome:`Soap Detergente`,sub:`Sabonete – Dove · Talco · Bamboo · Marine · Erva Doce · Pêssego · Trosseaud · Phebo`,desc:`Sabonete especial para lavagem das mãos e braços. Protege a pele, devolve maciez e oleosidade natural. Disponível em fragrâncias variadas para agradar todos os gostos.`,precos:[["500mL", "R$ 12,99", ""]],img:"campar_img/soap_det.jpg"},
+{id:"soap_liq",cat:"Especial",nome:`Soap Líquido`,sub:`Talco · Dove · Bamboo · Marine · Erva Doce · Pêssego · Trosseaud · Phebo`,desc:`Versão líquida do Soap para higiene diária das mãos. A mesma qualidade e suavidade, com fácil aplicação e rinse rápido. Pele macia, hidratada e perfumada.`,precos:[["5L", "R$ 54,99", "COD 20283"]],img:"campar_img/soap_liq.jpg"},
+{id:"placosol",cat:"Especial",nome:`Placosol`,sub:`Limpador para Placas e Aquecedores Solares`,desc:`Remove sujeira encrostada, resíduos minerais e depósitos em placas e aquecedores solares sem danificar. Mantém o sistema funcionando com máxima eficiência.`,precos:[["1L", "R$ 19,99", "COD 20511"], ["2L", "R$ 34,99", "COD 20512"], ["5L", "R$ 69,99", "COD 20324"]],img:"campar_img/placosol.jpg"},
+{id:"glicerina",cat:"Especial",nome:`Glicerina Bidestilada`,sub:`Emoliente e Lubrificante`,desc:`Versátil com aplicações como emoliente, umectante, lubrificante e solvente. Ingrediente essencial em formulações cosméticas, farmacêuticas e industriais.`,precos:[["500mL / 1L", "Consulte", ""]],img:"campar_img/glicerina.jpg"},
+{id:"thinner",cat:"Especial",nome:`Thinner Removedor`,sub:`Solvente e Diluente`,desc:`Remove óleo e graxa, limpa equipamentos e dilui tintas e vernizes. Produto indispensável para quem trabalha com pintura, manutenção e limpeza de maquinário.`,precos:[["2L / 50L", "Consulte", ""]],img:"campar_img/thinner.jpg"},
+{id:"querosene",cat:"Especial",nome:`Querosene Desodorizado`,sub:`Solvente e Diluente`,desc:`Remove graxa e óleo, limpa equipamentos e dilui tintas e vernizes. Versão desodorizada para uso mais confortável — mesmo poder de limpeza sem o odor forte.`,precos:[["2L", "Consulte", ""]],img:"campar_img/querosene.jpg"},
+{id:"aguarras",cat:"Especial",nome:`Aguarrás`,sub:`Solvente e Diluente`,desc:`Clássico removedor de óleo e graxa. Indicado para limpeza de equipamentos e diluição de tintas e vernizes. Uso amplo em pintura, manutenção e limpeza industrial.`,precos:[["2L", "Consulte", ""]],img:"campar_img/aguarras.jpg"},
+{id:"lauril",cat:"Especial",nome:`Lauril 27%`,sub:`Componente para Formulações Detergentes`,desc:`Componente ativo para formulação de detergentes para lavagem manual de louças, roupas e limpeza em geral. Para quem fabrica ou formula seus próprios produtos de limpeza.`,precos:[["1L", "Consulte", ""]],img:"campar_img/lauril.jpg"},
+{id:"acrilex",cat:"Limpeza de Piso",nome:`Acrilex A`,sub:`Cera Acrílica para Pisos`,desc:`Produz um filme de alta resistência ao tráfego com ação antiderrapante e grande brilho. Ideal para pisos com muito movimento — protege e embeleza ao mesmo tempo.`,precos:[["2L", "Consulte", ""], ["5L", "R$ 99,99", "COD 20348"]],img:"campar_img/acrilex.jpg"},
+{id:"campedra",cat:"Limpeza de Piso",nome:`Campedra`,sub:`Limpa Pedra Comum`,desc:`Remove sujidades pesadas e calcificações em pedras não arenosas como granito, mármore e pedras decorativas. Recupera o aspecto original da pedra sem danificar.`,precos:[["2L", "R$ 25,99", "COD 20331"], ["5L", "R$ 55,90", "COD 20330"]],img:"campar_img/campedra.jpg"},
+{id:"ceraflex",cat:"Limpeza de Piso",nome:`Ceraflex`,sub:`Cera Auto Brilho`,desc:`Renova e dá brilho instantâneo a pisos em geral. De fácil aplicação, dispensa máquina enceradora. Resultado profissional em laminado, taco, porcelanato e piso frio.`,precos:[["2L", "R$ 19,99", "COD 20355"], ["5L", "R$ 51,00", "COD 20346"]],img:"campar_img/ceraflex.jpg"},
+{id:"restaurador_mop",cat:"Limpeza de Piso",nome:`Restaurador Brilho Mop`,sub:`Restaurador de Brilho para Pisos`,desc:`Limpa, renova e devolve brilho a pisos como laminado, madeira, porcelanato, piso frio e taco. Para mop ou aplicação manual. Resultado visível — piso com cara de novo.`,precos:[["1L", "R$ 71,99", "COD 20386"]],img:"campar_img/restaurador_mop.jpg"},
+{id:"remoflex",cat:"Limpeza de Piso",nome:`Remoflex`,sub:`Removedor de Ceras`,desc:`Remove ceras e emulsões acrílicas de pisos com grande eficiência. Etapa essencial antes de reaplicar cera ou impermeabilizante — garante que a nova aplicação adira corretamente.`,precos:[["2L", "Consulte", ""], ["5L", "R$ 83,99", "COD 20432"]],img:"campar_img/remoflex.jpg"},
+{id:"pos_limp",cat:"Limpeza de Piso",nome:`Pos Limp`,sub:`Fim de Obras`,desc:`Limpeza e remoção de sujidades incrustadas no piso e em superfícies em geral após reformas e obras.`,precos:[["2L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"restaurex",cat:"Limpeza de Piso",nome:`Restaurex`,sub:`Restaurador de Brilho Antiderrapante`,desc:`Produz um filme de alta resistência ao tráfego com ação antiderrapante, dando ao piso brilho com aspecto molhado.`,precos:[["1L / 2L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"campmax",cat:"Limpeza de Piso",nome:`Campmax`,sub:`Limpa Piso – Limpeza Pesada`,desc:`Para remoção de sujidades incrustadas em pisos e superfícies de alto tráfego, ambientes industriais e comerciais. Quando a sujeira comum exige um produto à altura.`,precos:[["2L", "R$ 36,99", "COD 20401"], ["5L", "R$ 69,99", "COD 20325"], ["20L / 50L", "Consulte", ""]],img:"campar_img/campmax.jpg"},
+{id:"imperflex",cat:"Limpeza de Piso",nome:`Imperflex`,sub:`Impermeabilizante Acrílico para Pisos`,desc:`Para pisos frios — ação antiderrapante e auto brilhante, formando um filme de alta resistência ao tráfego. Protege, impermeabiliza e embeleza o piso em uma única aplicação.`,precos:[["2L", "R$ 99,99", "COD 20344"], ["5L", "R$ 208,00", "COD 20345"]],img:"campar_img/imperflex.jpg"},
+{id:"campiso",cat:"Limpeza de Piso",nome:`Campiso`,sub:`Limpa Porcelanato – Uso Diário`,desc:`Ideal para limpeza e conservação diária de pisos de porcelanato e superfícies em geral. Remove sujidade superficial sem agredir o acabamento, mantendo o brilho.`,precos:[["1L", "Consulte", ""], ["2L", "R$ 24,99", "COD 20393"], ["5L / 20L / 50L", "Consulte", ""]],img:"campar_img/campiso.jpg"},
+{id:"selaflex",cat:"Limpeza de Piso",nome:`Selaflex`,sub:`Selador de Pisos Porosos`,desc:`Prepara pisos porosos para receber ceras acrílicas e impermeabilizantes. Etapa fundamental para acabamento profissional e duradouro — sela os poros e melhora a aderência.`,precos:[["2L", "Consulte", ""], ["5L", "R$ 189,00", "COD 20424"]],img:"campar_img/selaflex.jpg"},
+{id:"tomelimp",cat:"Limpeza de Piso",nome:`Tomelimp`,sub:`Limpa Pedra São Tomé`,desc:`Remoção profunda de sujeiras e calcificações em pedras do tipo São Tomé. Penetra na textura rugosa e remove sujidade acumulada sem danificar a superfície.`,precos:[["2L", "R$ 69,99", "COD 20335"], ["5L", "R$ 75,99", "COD 20334"], ["20L / 50L", "Consulte", ""]],img:"campar_img/tomelimp.jpg"},
+{id:"dicloro57",cat:"Limpeza de Piscina",nome:`Dicloro 57`,sub:`Cloro em Pó`,desc:`Alta estabilidade, baixa interferência no pH da água e efeito prolongado, reduzindo os custos de manutenção da piscina.`,precos:[["1kg / 5kg / 10kg / 20kg", "Consulte", ""]],img:"campar_img/placeholder.svg"},
+{id:"aqua123",cat:"Limpeza de Piscina",nome:`Aqua 123`,sub:`Clarificante`,desc:`Usado para limpar água com grande sujidade. Promove a aglutinação da sujeira, facilitando a remoção por filtragem ou aspiração.`,precos:[["1L / 5L", "Consulte", ""]],img:"campar_img/placeholder.svg"}
+];
+
+let catAtiva = "Todos";
+let carrinho = JSON.parse(localStorage.getItem('campar_carrinho') || '[]');
+let modalQtd = {};
+
+function salvarCarrinho() {
+  localStorage.setItem('campar_carrinho', JSON.stringify(carrinho));
+}
+
+function precoNum(str) {
+  const v = parseFloat(str.replace('R$','').replace(',','.').trim());
+  return isNaN(v) ? null : v;
+}
+
+function subtotalItem(i) {
+  const v = precoNum(i.preco);
+  return v === null ? i.preco : 'R$ ' + (v * i.qtd).toFixed(2).replace('.',',');
+}
+
+// ── RENDER GRID ───────────────────────────────────────────────
+function render() {
+  const busca = document.getElementById('busca').value.toLowerCase().trim();
+  const grid = document.getElementById('grid');
+  
+  const filtrados = PRODUTOS.filter(p => {
+    const matchCat = catAtiva === "Todos" || p.cat === catAtiva;
+    const matchBusca = !busca || 
+      p.nome.toLowerCase().includes(busca) || 
+      p.sub.toLowerCase().includes(busca) ||
+      p.desc.toLowerCase().includes(busca);
+    return matchCat && matchBusca;
+  });
+
+  if (!filtrados.length) {
+    grid.innerHTML = '<div class="no-results">Nenhum produto encontrado 🔍</div>';
+    return;
+  }
+
+  grid.innerHTML = filtrados.map(p => {
+    const preco = p.precos[0];
+    const isConsulte = preco[1] === "Consulte";
+    return `
+    <div class="card" onclick="abrirModal('${p.id}')">
+      <div class="card-img">
+        <span class="cat-tag">${p.cat}</span>
+        <img src="${p.img}" alt="${p.nome}" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-nome">${p.nome}</div>
+        <div class="card-sub">${p.sub}</div>
+        <div class="card-desc">${p.desc}</div>
+        <div class="card-precos">
+          ${p.precos.slice(0,2).map(pr => `
+          <div class="preco-item">
+            <span class="preco-tam">${pr[0]}</span>
+            <div style="text-align:right">
+              <div class="preco-val">${pr[1]}</div>
+              ${pr[2] ? `<div class="preco-cod">${pr[2]}</div>` : ''}
+            </div>
+          </div>`).join('')}
+        </div>
+        <button class="add-btn ${isConsulte ? 'consulte' : ''}" onclick="addRapido(event,'${p.id}')">
+          ${isConsulte ? '💬 Solicitar orçamento' : '＋ Adicionar ao pedido'}
+        </button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── FILTRO CATEGORIA ─────────────────────────────────────────
+function filtrarCat(el, cat) {
+  catAtiva = cat;
+  document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('ativo'));
+  el.classList.add('ativo');
+  render();
+}
+function filtrar() { render(); }
+
+// ── MODAL PRODUTO ────────────────────────────────────────────
+function abrirModal(id) {
+  const p = PRODUTOS.find(x => x.id === id);
+  if (!p) return;
+  document.getElementById('modalCat').textContent = p.cat;
+  document.getElementById('modalImg').src = p.img;
+  document.getElementById('modalImg').alt = p.nome;
+  document.getElementById('modalNome').textContent = p.nome;
+  document.getElementById('modalSub').textContent = p.sub;
+  document.getElementById('modalDesc').textContent = p.desc;
+  
+  modalQtd = {};
+  const pc = document.getElementById('modalPrecos');
+  pc.innerHTML = p.precos.map((pr,i) => {
+    modalQtd[i] = 1;
+    const isConsulte = pr[1] === "Consulte";
+    return `
+    <div class="modal-preco-row">
+      <div class="mp-top">
+        <div class="mp-left">
+          <span class="mp-tam">${pr[0]}</span>
+          ${pr[2] ? `<span class="mp-cod">${pr[2]}</span>` : ''}
+        </div>
+        <span class="mp-val">${pr[1]}</span>
+      </div>
+      <div class="mp-bottom">
+        <div class="mp-qty">
+          <button class="qty-btn" onclick="alterarModalQtd(${i},-1)">−</button>
+          <span class="qty-val" id="modalQtdVal${i}">1</span>
+          <button class="qty-btn" onclick="alterarModalQtd(${i},1)">+</button>
+        </div>
+        <button class="mp-add ${isConsulte ? 'consulte' : ''}" onclick="addCarrinho('${id}',${i},modalQtd[${i}]);fecharModalBtn()">
+          ${isConsulte ? '💬 Orçamento' : '＋ Adicionar'}
+        </button>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function alterarModalQtd(i, delta) {
+  modalQtd[i] = Math.max(1, (modalQtd[i] || 1) + delta);
+  document.getElementById(`modalQtdVal${i}`).textContent = modalQtd[i];
+}
+function fecharModal(e) {
+  if (e.target === document.getElementById('modalOverlay')) fecharModalBtn();
+}
+function fecharModalBtn() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ── CARRINHO ─────────────────────────────────────────────────
+function addRapido(e, id) {
+  e.stopPropagation();
+  addCarrinho(id, 0);
+}
+
+function addCarrinho(id, precoIdx, qtd) {
+  qtd = qtd || 1;
+  const p = PRODUTOS.find(x => x.id === id);
+  if (!p) return;
+  const pr = p.precos[precoIdx];
+  const existente = carrinho.find(i => i.id === id && i.tam === pr[0]);
+  if (existente) {
+    existente.qtd += qtd;
+  } else {
+    carrinho.push({
+      id, nome: p.nome, tam: pr[0], preco: pr[1], img: p.img, qtd,
+      uid: Date.now() + Math.random()
+    });
+  }
+  salvarCarrinho();
+  atualizarBadge();
+  showToast(`${p.nome} adicionado ✓`);
+}
+
+function alterarQtdCarrinho(uid, delta) {
+  const item = carrinho.find(i => i.uid === uid);
+  if (!item) return;
+  item.qtd += delta;
+  if (item.qtd <= 0) {
+    carrinho = carrinho.filter(i => i.uid !== uid);
+  }
+  salvarCarrinho();
+  atualizarBadge();
+  renderCarrinho();
+}
+
+function removerItem(uid) {
+  carrinho = carrinho.filter(i => i.uid !== uid);
+  salvarCarrinho();
+  atualizarBadge();
+  renderCarrinho();
+}
+
+function atualizarBadge() {
+  const b = document.getElementById('cartBadge');
+  const total = carrinho.reduce((acc,i) => acc + i.qtd, 0);
+  b.textContent = total;
+  b.style.display = total ? 'flex' : 'none';
+}
+
+function abrirCarrinho() {
+  renderCarrinho();
+  document.getElementById('cartOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function fecharCarrinho() {
+  document.getElementById('cartOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function fecharCarrinhoEv(e) {
+  if (e.target === document.getElementById('cartOverlay')) fecharCarrinho();
+}
+
+function renderCarrinho() {
+  const el = document.getElementById('cartContent');
+  if (!carrinho.length) {
+    el.innerHTML = `
+      <div class="cart-empty">
+        <div style="font-size:2.5rem;margin-bottom:10px">🛒</div>
+        <div>Seu pedido está vazio</div>
+        <div style="margin-top:6px;font-size:.8rem">Adicione produtos para fazer seu pedido</div>
+      </div>`;
+    return;
+  }
+
+  const totalNum = carrinho.reduce((acc,i) => {
+    const v = precoNum(i.preco);
+    return v === null ? acc : acc + v * i.qtd;
+  }, 0);
+
+  const totalStr = totalNum > 0
+    ? 'R$ ' + totalNum.toFixed(2).replace('.',',')
+    : '(consulte preços)';
+
+  el.innerHTML = `
+    <div class="cart-items">
+      ${carrinho.map(i => `
+      <div class="cart-item">
+        <img class="ci-img" src="${i.img}" alt="${i.nome}">
+        <div class="ci-info">
+          <div class="ci-nome">${i.nome}</div>
+          <div class="ci-tam">${i.tam}</div>
+          <div class="ci-qty">
+            <button class="qty-btn" onclick="alterarQtdCarrinho(${i.uid},-1)">−</button>
+            <span class="qty-val">${i.qtd}</span>
+            <button class="qty-btn" onclick="alterarQtdCarrinho(${i.uid},1)">+</button>
+          </div>
+        </div>
+        <div class="ci-preco">${subtotalItem(i)}</div>
+        <button class="ci-remove" onclick="removerItem(${i.uid})" title="Remover">🗑</button>
+      </div>`).join('')}
+    </div>
+    <div class="cart-total">
+      <span class="total-label">Total estimado</span>
+      <span class="total-val">${totalStr}</span>
+    </div>
+    <button class="wa-btn" onclick="enviarWA()">
+      <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.121.555 4.112 1.528 5.837L.057 23.888l6.218-1.448A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.848 0-3.57-.502-5.051-1.378l-.361-.214-3.741.87.936-3.618-.235-.374A9.966 9.966 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+      </svg>
+      Enviar pedido pelo WhatsApp
+    </button>`;
+}
+
+function enviarWA() {
+  if (!carrinho.length) return;
+  let msg = "Olá! Gostaria de fazer o seguinte pedido:\n\n";
+  carrinho.forEach((i,idx) => {
+    msg += `${idx+1}. ${i.nome} – ${i.tam} × ${i.qtd} (${subtotalItem(i)})\n`;
+  });
+
+  const totalNum = carrinho.reduce((acc,i) => {
+    const v = precoNum(i.preco);
+    return v === null ? acc : acc + v * i.qtd;
+  }, 0);
+  if (totalNum > 0) {
+    msg += "\nTotal estimado: R$ " + totalNum.toFixed(2).replace('.',',');
+  }
+  msg += "\n\nPoderia confirmar disponibilidade e formas de entrega? Obrigado(a)!";
+
+  const url = `https://wa.me/5531986991635?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+}
+
+function abrirWhatsAppGeral() {
+  const msg = "Olá! Vim pelo catálogo da Campar Química e gostaria de tirar uma dúvida.";
+  window.open(`https://wa.me/5531986991635?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+// ── TOAST ────────────────────────────────────────────────────
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// ── INIT ─────────────────────────────────────────────────────
+render();
+atualizarBadge();
+</script>
+</body>
+</html>
