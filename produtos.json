@@ -7,8 +7,8 @@
     "desc": "Limpeza neutralizadora de odor, indicada para a limpeza do ambiente do seu pet. Remove sujeiras pesadas de roupas, tapetes e tecidos.",
     "precos": [
       [
-        "500mL",
-        "Consulte",
+        "2l",
+        "R$19,99",
         ""
       ],
       [
@@ -37,18 +37,18 @@
         "COD 20349"
       ],
       [
-        "2L",
-        "Consulte",
-        ""
-      ],
-      [
         "5L",
         "R$ 29,99",
         "COD 20350"
       ],
       [
-        "20L / 50L",
-        "Consulte",
+        "20L ",
+        "R$99,99",
+        ""
+      ],
+      [
+        "50L",
+        "R$179,99",
         ""
       ]
     ],
@@ -62,8 +62,8 @@
     "desc": "Limpa forno desenvolvido especialmente para fornos domésticos e industriais. Alto poder de penetração para dissolver gorduras carbonizadas e óleos acumulados.",
     "precos": [
       [
-        "500mL",
-        "Consulte",
+        "1L",
+        "R$29,99",
         ""
       ],
       [
@@ -72,8 +72,8 @@
         ""
       ],
       [
-        "20L",
-        "Consulte",
+        "",
+        "",
         ""
       ]
     ],
@@ -90,6 +90,11 @@
         "5L",
         "R$ 78,99",
         "COD 20280"
+      ],
+      [
+        "20L",
+        "Consulte",
+        ""
       ]
     ],
     "img": "campar_img/nullbac.jpg"
@@ -99,10 +104,15 @@
     "cat": "Limpeza Geral",
     "nome": "Easy Clean",
     "sub": "Alvejante Líquido",
-    "desc": "Altamente eficaz na remoção de manchas em tecidos brancos e coloridos, para quando a mancha resiste ao sabão e ao amaciante.",
+    "desc": "Altamente eficaz na remoção de manchas em tecidos brancos e coloridos, para quando a mancha resiste ao sabão e ao amaciante. Pode colocar diretamente na máquina",
     "precos": [
       [
-        "5L / 20L / 50L",
+        "5L",
+        "R$86,99",
+        ""
+      ],
+      [
+        "20L",
         "Consulte",
         ""
       ]
@@ -117,7 +127,12 @@
     "desc": "Alto poder de solubilização de óleos, gorduras e graxas com aroma fresco de pinho. Indicado para azulejos, banheiros, pisos e sanitários. Gel de alta viscosidade que adere à superfície e age melhor.",
     "precos": [
       [
-        "2L / 5L",
+        "2L",
+        "Consulte",
+        ""
+      ],
+      [
+        "5L",
         "Consulte",
         ""
       ]
@@ -132,8 +147,13 @@
     "desc": "Mesma potência do Gel Mix com aroma suave de lavanda. Limpa azulejos, banheiros e sanitários com eficiência, deixando o ambiente com perfume relaxante.",
     "precos": [
       [
-        "2L / 5L",
-        "Consulte",
+        "2L",
+        "R$22,99",
+        ""
+      ],
+      [
+        "5L",
+        "R$45,99",
         ""
       ]
     ],
@@ -147,8 +167,8 @@
     "desc": "Remove sujidades, manchas escuras e incrustações em telhas, fachadas, pedras e muros. Recupera o visual limpo e conservado do exterior do imóvel.",
     "precos": [
       [
-        "2L / 5L",
-        "Consulte",
+        "5L",
+        "R$63,99",
         ""
       ]
     ],
@@ -165,16 +185,6 @@
         "500mL",
         "R$ 10,99",
         "COD 20394"
-      ],
-      [
-        "1L",
-        "Consulte",
-        ""
-      ],
-      [
-        "2L",
-        "Consulte",
-        ""
       ],
       [
         "5L",
@@ -202,7 +212,7 @@
         "COD 20496"
       ],
       [
-        "25L",
+        "20L",
         "Consulte",
         ""
       ]
@@ -217,7 +227,12 @@
     "desc": "Para a limpeza pesada de bancadas, baús, caixas de transporte, cerâmicas, paredes e pisos. Corta gordura e óleo com eficiência sem danificar as superfícies.",
     "precos": [
       [
-        "5L / 50L",
+        "5L ",
+        "Consulte",
+        ""
+      ],
+      [
+        "20L",
         "Consulte",
         ""
       ]
@@ -257,7 +272,7 @@
     "desc": "Remove manchas escuras, oxidação e resíduos de queimado em peças inox. Indicado também para limpeza e abrilhantamento de alumínio.",
     "precos": [
       [
-        "500g",
+        "500ML",
         "R$ 16,99",
         "COD 20332"
       ]
@@ -272,13 +287,8 @@
     "desc": "Indicada para limpeza e abrilhantamento de panelas, talheres e utensílios de alumínio. Remove manchas escuras, oxidação e resíduos de queimado, devolvendo o brilho original.",
     "precos": [
       [
-        "500g",
-        "Consulte",
-        ""
-      ],
-      [
         "1kg",
-        "R$ 19,00",
+        "R$ 19,99",
         "COD 20497"
       ]
     ],
@@ -287,7 +297,7 @@
   {
     "id": "campdesin_eucalipto",
     "cat": "Limpeza Geral",
-    "nome": "Campdesin Eucalipto",
+    "nome": "Limpador Perfumado  Eucalipto",
     "sub": "Desinfetante Profissional",
     "desc": "Desinfetante de uso geral com aroma fresco de eucalipto. Limpa, desinfeta e perfuma ambientes domésticos, comerciais e industriais. Ação bactericida com fragrância que refresca qualquer espaço.",
     "precos": [
@@ -307,14 +317,19 @@
   {
     "id": "campdesin_lavanda",
     "cat": "Limpeza Geral",
-    "nome": "Campdesin Lavanda",
+    "nome": "Limpador Perfumado  Lavanda",
     "sub": "Desinfetante Profissional",
     "desc": "Desinfetante com aroma suave de lavanda. Combina eficiência bactericida real com fragrância que transforma a sensação do ambiente. Ideal para banheiros, quartos e áreas de circulação.",
     "precos": [
       [
-        "5L",
-        "R$ 28,00",
+        "2L",
+        "R$ 14,99",
         "COD 20284"
+      ],
+      [
+        "5L",
+        "R$27,99",
+        ""
       ]
     ],
     "img": "campar_img/campdesin_lavanda.jpg"
@@ -322,13 +337,18 @@
   {
     "id": "campdesin_floral",
     "cat": "Limpeza Geral",
-    "nome": "Campdesin Floral",
+    "nome": "Limpador Perfumado  Floral",
     "sub": "Desinfetante Profissional",
     "desc": "Desinfetante com aroma floral delicado. Limpeza e desinfecção eficientes com o perfume que deixa qualquer ambiente com cara de limpo e cheiro de fresco.",
     "precos": [
       [
-        "2L / 5L",
-        "Consulte",
+        "2L",
+        "R$14,99",
+        ""
+      ],
+      [
+        "5L",
+        "R$27,99",
         ""
       ]
     ],
@@ -350,11 +370,6 @@
         "5L",
         "R$ 27,99",
         "COD 20434"
-      ],
-      [
-        "20L",
-        "Consulte",
-        ""
       ]
     ],
     "img": "campar_img/limpador_orvalho.jpg"
@@ -374,11 +389,6 @@
       [
         "5L",
         "R$ 27,99",
-        ""
-      ],
-      [
-        "20L",
-        "Consulte",
         ""
       ]
     ],
@@ -400,11 +410,6 @@
         "5L",
         "R$ 27,99",
         ""
-      ],
-      [
-        "20L",
-        "Consulte",
-        ""
       ]
     ],
     "img": "campar_img/placeholder.svg"
@@ -412,9 +417,9 @@
   {
     "id": "limpador_perfumado_lavanda",
     "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado Lavanda",
+    "nome": "Limpador Perfumado Lavanda - ",
     "sub": "Limpador de Pisos e Superfícies",
-    "desc": "Fórmula equilibrada para limpeza eficiente de pisos, bancadas e paredes com a fragrância suave e relaxante de lavanda. Limpa sem agredir e deixa o ambiente com aroma agradável por mais tempo.",
+    "desc": "é o mesmo de campdesin",
     "precos": [
       [
         "2L",
@@ -450,11 +455,6 @@
         "5L",
         "R$ 27,99",
         ""
-      ],
-      [
-        "20L",
-        "Consulte",
-        ""
       ]
     ],
     "img": "campar_img/placeholder.svg"
@@ -470,6 +470,11 @@
         "2L",
         "Consulte",
         ""
+      ],
+      [
+        "5l",
+        "Consulte",
+        ""
       ]
     ],
     "img": "campar_img/placeholder.svg",
@@ -478,9 +483,9 @@
   {
     "id": "bio_brilho_gel",
     "cat": "Automotivo",
-    "nome": "Bio Brilho Gel",
+    "nome": "nao tem",
     "sub": "Brilha Painel Siliconado",
-    "desc": "Produto siliconado em gel para limpar, conservar e renovar superfícies plásticas e emborrachadas do interior do veículo. Deixa o painel com visual de carro novo, protegendo contra ressecamento.",
+    "desc": "nao tem ",
     "precos": [
       [
         "500mL",
@@ -493,7 +498,7 @@
   {
     "id": "bio_brilho_liq",
     "cat": "Automotivo",
-    "nome": "Bio Brilho Líquido",
+    "nome": "Brilha painel siliconado",
     "sub": "Brilha Painel Siliconado",
     "desc": "Versão líquida para uma aplicação rápida e fácil. Renova e protege superfícies plásticas e emborrachadas, devolvendo brilho com aparência renovada. Ideal para uso cotidiano.",
     "precos": [
@@ -513,8 +518,13 @@
     "desc": "Alta performance para limpeza pesada, média ou leve de equipamentos e superfícies com acúmulo de óleo e graxa. A diluição se ajusta ao nível de sujidade, do serviço mais leve ao mais pesado.",
     "precos": [
       [
-        "2L / 5L / 20L / 50L",
-        "Consulte",
+        "2L",
+        "R$27,00",
+        ""
+      ],
+      [
+        "5L",
+        "R$41,99",
         ""
       ]
     ],
@@ -544,7 +554,7 @@
     "precos": [
       [
         "1L",
-        "Consulte",
+        "R$19,99",
         ""
       ],
       [
@@ -554,7 +564,7 @@
       ],
       [
         "20L",
-        "Consulte",
+        "R$118,00",
         ""
       ]
     ],
@@ -565,7 +575,7 @@
     "cat": "Automotivo",
     "nome": "Autolav Comum",
     "sub": "Detergente Automotivo",
-    "desc": "Detergente específico para lavagem de todo tipo de veículo. Fórmula suave que não agride cromados, borrachas e vidros, garantindo lavagem segura e resultado limpo.",
+    "desc": "DEIXAR INATIVO, QUANDO TIVER ATIVAR O PRODUTO etergente específico para lavagem de todo tipo de veículo. Fórmula suave que não agride cromados, borrachas e vidros, garantindo lavagem segura e resultado limpo.",
     "precos": [
       [
         "2L",
@@ -593,11 +603,6 @@
     "desc": "Remove incrustações de cimento em veículos, equipamentos industriais e tubulações. Essencial para obras e ambientes de construção onde o cimento gruda em tudo.",
     "precos": [
       [
-        "2L",
-        "Consulte",
-        ""
-      ],
-      [
         "5L",
         "R$ 79,99",
         "COD 20422"
@@ -613,12 +618,17 @@
   {
     "id": "minecap",
     "cat": "Automotivo",
-    "nome": "Minecap",
+    "nome": "Minecap ( nao tem foto)",
     "sub": "Desincrustante de Minério",
     "desc": "Limpeza pesada de veículos e equipamentos com depósito de minério. Alta performance para ambientes de mineração, transportadoras e indústria pesada.",
     "precos": [
       [
-        "5L / 50L",
+        "5L",
+        "Consulte",
+        ""
+      ],
+      [
+        "20L",
         "Consulte",
         ""
       ]
@@ -628,13 +638,13 @@
   {
     "id": "desengraxante_az",
     "cat": "Automotivo",
-    "nome": "Desengraxante AZ",
+    "nome": "Desengraxante AZ (foto)",
     "sub": "Desengraxante Alta Performance",
     "desc": "Para carros, equipamentos pesados e superfícies com acúmulo de óleo e graxa. Corta sujidade pesada com eficiência. Indicado para oficinas, transportadoras e frotas.",
     "precos": [
       [
-        "2L / 5L / 20L / 50L",
-        "Consulte",
+        "20L",
+        "R$129,99",
         ""
       ]
     ],
@@ -654,12 +664,12 @@
       ],
       [
         "5L",
-        "Consulte",
+        "R$45,99",
         ""
       ],
       [
         "20L",
-        "Consulte",
+        "R$123,99",
         ""
       ]
     ],
@@ -668,9 +678,9 @@
   {
     "id": "biograx",
     "cat": "Automotivo",
-    "nome": "Biograx",
+    "nome": "Biograx (não tem foto)",
     "sub": "Pasta Desengraxante para Mãos",
-    "desc": "Remove óleo, graxa e sujidades pesadas das mãos após trabalho mecânico. Alto poder desengordurante com fórmula que protege a pele do ressecamento — limpeza profunda sem agredir.",
+    "desc": "Em breve - Remove óleo, graxa e sujidades pesadas das mãos após trabalho mecânico. Alto poder desengordurante com fórmula que protege a pele do ressecamento — limpeza profunda sem agredir.",
     "precos": [
       [
         "500g / 1kg / 5kg",
@@ -686,7 +696,7 @@
     "cat": "Automotivo",
     "nome": "Dex Cap",
     "sub": "Desengraxante Premium Concentrado 100x",
-    "desc": "Sem ácido, altíssima performance para limpeza e decapagem de carros, motos e equipamentos industriais. Ultra concentrado — rende até 100 vezes mais. Econômico e eficiente.",
+    "desc": "Em breve - Sem ácido, altíssima performance para limpeza e decapagem de carros, motos e equipamentos industriais. Ultra concentrado — rende até 100 vezes mais. Econômico e eficiente.",
     "precos": [
       [
         "2L",
@@ -722,6 +732,11 @@
         "20L",
         "Consulte",
         ""
+      ],
+      [
+        "50L",
+        "Consulte",
+        ""
       ]
     ],
     "img": "campar_img/amaciante.jpg"
@@ -734,12 +749,17 @@
     "desc": "Indicado para desinfecção hospitalar de superfícies fixas e artigos não críticos. Alta eficiência no controle de micro-organismos em ambientes que exigem higienização rigorosa.",
     "precos": [
       [
-        "20L",
-        "R$ 229,00",
+        "2L",
+        "R$ 14,99",
         ""
       ],
       [
-        "50L",
+        "5L",
+        "R$32,99",
+        ""
+      ],
+      [
+        "20L",
         "Consulte",
         ""
       ]
@@ -774,7 +794,7 @@
   {
     "id": "campast",
     "cat": "Lavanderia",
-    "nome": "Campast",
+    "nome": "Campast - Pasta umectante ",
     "sub": "Pasta Umectante para Roupas",
     "desc": "Para limpeza pesada de roupas com manchas, com alto poder de penetração nas fibras. Ideal para uso em máquinas extratoras, limpeza de colchão e sofá.",
     "precos": [
@@ -815,8 +835,8 @@
       ],
       [
         "5L",
-        "R$ 32,99",
-        "COD 20388"
+        "R$32,99",
+        ""
       ],
       [
         "20L",
@@ -834,13 +854,13 @@
   {
     "id": "camplimp_po",
     "cat": "Lavanderia",
-    "nome": "Camplimp Sabão em Pó",
+    "nome": "Claridete -  Sabão em Pó",
     "sub": "Sabão em Pó para Roupas",
     "desc": "Alto poder de solubilização de óleos, graxas e gorduras vegetais e animais. Indicado para a limpeza de roupas em geral — uma alternativa em pó ao sabão líquido Camplimp.",
     "precos": [
       [
-        "1kg / 10kg / 20kg",
-        "Consulte",
+        "1KG",
+        "R$86,99",
         ""
       ]
     ],
@@ -849,12 +869,22 @@
   {
     "id": "soluban",
     "cat": "Especial",
-    "nome": "Soluban",
+    "nome": "Soluban - Solução de banheiro químico",
     "sub": "Solução para Banheiro Químico",
     "desc": "Para tratamento de detritos orgânicos em sanitários fixos e portáteis, motor homes e aeronaves. Atua como limpador e desodorizante de alto desempenho, mantendo higiene e eliminando odores fortes.",
     "precos": [
       [
-        "1L / 5L",
+        "5L",
+        "R$99,99",
+        ""
+      ],
+      [
+        "20L",
+        "Consulte",
+        ""
+      ],
+      [
+        "50L",
         "Consulte",
         ""
       ]
@@ -864,12 +894,12 @@
   {
     "id": "arocitro",
     "cat": "Especial",
-    "nome": "Arocitro",
+    "nome": "Aromar ",
     "sub": "Aromatizante e Inibidor de Odores Fortes",
     "desc": "Aromatiza e neutraliza odores fortes em ambientes domésticos, comerciais e industriais. Uso puro ou diluído, para quando o cheiro é realmente difícil de disfarçar.",
     "precos": [
       [
-        "1L / 5L",
+        "1L",
         "Consulte",
         ""
       ]
@@ -879,18 +909,18 @@
   {
     "id": "suape",
     "cat": "Especial",
-    "nome": "Suape",
+    "nome": "SOAP Sabonete Liquido ",
     "sub": "Sabonete Líquido – Dove · Erva-doce · Marine",
-    "desc": "Soap especial elaborado para lavar e limpar mãos e braços com qualidade e suavidade. Linha de fragrâncias para toaletes e banheiros.",
+    "desc": "Soap especial elaborado para lavar e limpar mãos e braços com qualidade e suavidade. Linha de fragrâncias para toaletes e banheiros. Indicado para clínicas e hospitais.",
     "precos": [
       [
         "500mL",
-        "Consulte",
+        "R$12,99",
         ""
       ],
       [
         "5L",
-        "Consulte",
+        "R$54,99",
         ""
       ],
       [
@@ -904,13 +934,18 @@
   {
     "id": "alvejar_mais",
     "cat": "Especial",
-    "nome": "Alvejar+",
+    "nome": "Alvejar+ - Alvejante em pó",
     "sub": "Alvejante em Pó",
     "desc": "Alvejante em pó altamente eficaz na remoção de manchas em tecidos brancos e coloridos, para quando a mancha resiste ao sabão e ao amaciante.",
     "precos": [
       [
-        "1kg / 5kg",
-        "Consulte",
+        "500G",
+        "R$32,99",
+        ""
+      ],
+      [
+        "1KG",
+        "R$59,99",
         ""
       ]
     ],
@@ -919,13 +954,18 @@
   {
     "id": "tira_manchas_concentrado",
     "cat": "Lavanderia",
-    "nome": "Tira-Manchas Concentrado",
+    "nome": "EASY CLEAN - Tira-Manchas Concentrado",
     "sub": "Similar a Vanish Líquido (mais forte)",
-    "desc": "Em breve: fórmula concentrada para remoção de manchas difíceis em tecidos, com poder de ação superior às opções tradicionais do mercado.",
+    "desc": "Fórmula concentrada para remoção de manchas difíceis em tecidos, com poder de ação superior às opções tradicionais do mercado.",
     "precos": [
       [
-        "Em breve",
-        "",
+        "5L",
+        "R$86,99",
+        ""
+      ],
+      [
+        "20L",
+        "Consulte",
         ""
       ]
     ],
@@ -937,7 +977,7 @@
     "cat": "Especial",
     "nome": "LG 401 Antimofo",
     "sub": "Elimina Umidade e Fungos",
-    "desc": "Age eliminando a umidade e os fungos, evitando a proliferação de mofo em paredes, rejuntes e superfícies úmidas.",
+    "desc": "Em breve - Age eliminando a umidade e os fungos, evitando a proliferação de mofo em paredes, rejuntes e superfícies úmidas.",
     "precos": [
       [
         "500mL / 1L / 2L / 5L",
@@ -955,8 +995,8 @@
     "desc": "Alto poder de limpeza sem deixar as superfícies embaçadas. Solvente técnico usado em formulações e limpeza especial. Indicado para retirada de colas e adesivos em plástico, vidro e portas.",
     "precos": [
       [
-        "1L / 2L / 5L",
-        "Consulte",
+        "1L",
+        "R$84,99",
         ""
       ]
     ],
@@ -967,7 +1007,7 @@
     "cat": "Especial",
     "nome": "Detergente Neutro Hospitalar",
     "sub": "Limpeza de Superfícies em Geral",
-    "desc": "Alto poder de solubilização de gorduras vegetais e animais. Indicado para a limpeza de superfícies em ambientes hospitalares e clínicos.",
+    "desc": "DEIXAR OCULTO Alto poder de solubilização de gorduras vegetais e animais. Indicado para a limpeza de superfícies em ambientes hospitalares e clínicos.",
     "precos": [
       [
         "1L / 5L",
@@ -982,7 +1022,7 @@
     "cat": "Especial",
     "nome": "FOG 7201",
     "sub": "Álcool Gel Inflamável para Rechaud e Fogareiro",
-    "desc": "Utilizado para queima em rechauds para aquecimento de alimentos, acendimento de churrasqueiras e lareiras.",
+    "desc": "DEIXAR OCULTO - Utilizado para queima em rechauds para aquecimento de alimentos, acendimento de churrasqueiras e lareiras.",
     "precos": [
       [
         "1L / 5L / 10L",
@@ -997,7 +1037,7 @@
     "cat": "Especial",
     "nome": "LG 403",
     "sub": "Sabão para Remoção de Sangue",
-    "desc": "Indicado para a remoção de manchas de sangue em superfícies e tecidos.",
+    "desc": "DEIXAR OCULTO - Indicado para a remoção de manchas de sangue em superfícies e tecidos.",
     "precos": [
       [
         "1L / 2L / 5L",
@@ -1012,7 +1052,7 @@
     "cat": "Especial",
     "nome": "IND 7017",
     "sub": "Desincrustante para Torres de Resfriamento",
-    "desc": "Limpeza pesada de equipamentos e tubulações industriais com incrustação.",
+    "desc": "DEIXAR OCULTO Limpeza pesada de equipamentos e tubulações industriais com incrustação.",
     "precos": [
       [
         "5L / 50L",
@@ -1027,7 +1067,7 @@
     "cat": "Especial",
     "nome": "IND 7018",
     "sub": "Antifúngico",
-    "desc": "Indicado para evitar a corrosão e proteger peças ferrosas contra fungos e oxidação.",
+    "desc": "DEIXAR OCULTO Indicado para evitar a corrosão e proteger peças ferrosas contra fungos e oxidação.",
     "precos": [
       [
         "5L",
@@ -1042,7 +1082,7 @@
     "cat": "Especial",
     "nome": "Vaselina Líquida",
     "sub": "Emoliente e Lubrificante",
-    "desc": "Propriedades desengordurantes, emolientes, espessantes e lubrificantes. Amplamente usado na composição de outros produtos e em aplicações industriais e cosméticas.",
+    "desc": "DEIXAR OCULTO Propriedades desengordurantes, emolientes, espessantes e lubrificantes. Amplamente usado na composição de outros produtos e em aplicações industriais e cosméticas.",
     "precos": [
       [
         "2L",
@@ -1115,9 +1155,9 @@
   {
     "id": "aromar_ultrassom",
     "cat": "Especial",
-    "nome": "Aromar Ultrassom",
+    "nome": "Aromar trousseau",
     "sub": "Odorizador de Ambientes",
-    "desc": "Fragrância marcante para aromatizar ambientes domésticos, comerciais e industriais.",
+    "desc": "em breve - Fragrância marcante para aromatizar ambientes domésticos, comerciais e industriais.",
     "precos": [
       [
         "1L",
@@ -1171,11 +1211,11 @@
       ],
       [
         "5L",
-        "R$ 68,00",
+        "Consulte",
         "COD 20520"
       ],
       [
-        "50L",
+        "20L",
         "Consulte",
         ""
       ]
@@ -1185,7 +1225,7 @@
   {
     "id": "soap_liq",
     "cat": "Especial",
-    "nome": "Soap Líquido",
+    "nome": "Pode retirar ",
     "sub": "Talco · Dove · Bamboo · Marine · Erva Doce · Pêssego · Trosseaud · Phebo",
     "desc": "Versão líquida do Soap para higiene diária das mãos. A mesma qualidade e suavidade, com fácil aplicação e rinse rápido. Pele macia, hidratada e perfumada.",
     "precos": [
@@ -1220,9 +1260,9 @@
   {
     "id": "placosol",
     "cat": "Especial",
-    "nome": "Placosol",
+    "nome": "Placosol - Limpeza de placa solar",
     "sub": "Limpador para Placas e Aquecedores Solares",
-    "desc": "Remove sujeira encrostada, resíduos minerais e depósitos em placas e aquecedores solares sem danificar. Mantém o sistema funcionando com máxima eficiência.",
+    "desc": "Remove sujeira encrostada, resíduos minerais e depósitos em placas e aquecedores solares sem danificar. Mantém o sistema funcionando com máxima eficiência. Limpeza de placa solar e tira calcário de box e vidro",
     "precos": [
       [
         "1L",
@@ -1245,13 +1285,13 @@
   {
     "id": "thinner",
     "cat": "Especial",
-    "nome": "Thinner Removedor",
+    "nome": "Thinner Removedor (nao tem foto)",
     "sub": "Solvente e Diluente",
     "desc": "Indicado para limpeza de equipamentos, luzes, tintas e verniz.",
     "precos": [
       [
         "2L",
-        "Consulte",
+        "R$51,99",
         ""
       ],
       [
@@ -1272,7 +1312,7 @@
     "cat": "Especial",
     "nome": "Querosene Desodorizado",
     "sub": "Solvente e Diluente",
-    "desc": "Remove graxa e óleo, limpa equipamentos e dilui tintas e vernizes. Versão desodorizada para uso mais confortável — mesmo poder de limpeza sem o odor forte.",
+    "desc": "DEIXAR OCULTO - Remove graxa e óleo, limpa equipamentos e dilui tintas e vernizes. Versão desodorizada para uso mais confortável — mesmo poder de limpeza sem o odor forte.",
     "precos": [
       [
         "2L",
@@ -1287,7 +1327,7 @@
     "cat": "Especial",
     "nome": "Aguarrás",
     "sub": "Solvente e Diluente",
-    "desc": "Clássico removedor de óleo e graxa. Indicado para limpeza de equipamentos e diluição de tintas e vernizes. Uso amplo em pintura, manutenção e limpeza industrial.",
+    "desc": "DEIXAR OCULTO - Clássico removedor de óleo e graxa. Indicado para limpeza de equipamentos e diluição de tintas e vernizes. Uso amplo em pintura, manutenção e limpeza industrial.",
     "precos": [
       [
         "2L",
@@ -1300,13 +1340,13 @@
   {
     "id": "lauril",
     "cat": "Especial",
-    "nome": "Lauril 27%",
+    "nome": "Lauril 27% - Fazer bolha de sabão",
     "sub": "Componente para Formulações Detergentes",
     "desc": "Componente ativo para formulação de detergentes para lavagem manual de louças, roupas e limpeza em geral. Utilizado também na formulação de bolinha de sabão.",
     "precos": [
       [
         "20L",
-        "Consulte",
+        "R$239,99",
         ""
       ]
     ],
@@ -1315,13 +1355,13 @@
   {
     "id": "acrilex",
     "cat": "Limpeza de Piso",
-    "nome": "Acrilex A",
+    "nome": "Acrilex A - Cera acrílica antiderrapante",
     "sub": "Cera Acrílica para Pisos",
     "desc": "Produz um filme de alta resistência ao tráfego com ação antiderrapante e grande brilho. Ideal para pisos com muito movimento — protege e embeleza ao mesmo tempo.",
     "precos": [
       [
         "2L",
-        "Consulte",
+        "R$59,99",
         ""
       ],
       [
@@ -1346,7 +1386,7 @@
       ],
       [
         "5L",
-        "R$ 55,90",
+        "R$ 55,99",
         "COD 20330"
       ]
     ],
@@ -1355,7 +1395,7 @@
   {
     "id": "ceraflex",
     "cat": "Limpeza de Piso",
-    "nome": "Ceraflex",
+    "nome": "Ceraflex - Cera de autobrilho incolor",
     "sub": "Cera Auto Brilho",
     "desc": "Renova e dá brilho instantâneo a pisos em geral. De fácil aplicação, dispensa máquina enceradora. Resultado profissional em laminado, taco, porcelanato e piso frio.",
     "precos": [
@@ -1401,7 +1441,7 @@
       ],
       [
         "5L",
-        "R$ 83,99",
+        "R$ 98,99",
         "COD 20432"
       ]
     ],
@@ -1412,7 +1452,7 @@
     "cat": "Limpeza de Piso",
     "nome": "Pos Limp",
     "sub": "Fim de Obras",
-    "desc": "Limpeza e remoção de sujidades incrustadas no piso e em superfícies em geral após reformas e obras.",
+    "desc": "OCULTAR - Limpeza e remoção de sujidades incrustadas no piso e em superfícies em geral após reformas e obras.",
     "precos": [
       [
         "2L / 5L",
@@ -1427,7 +1467,7 @@
     "cat": "Limpeza de Piso",
     "nome": "Restaurex",
     "sub": "Restaurador de Brilho Antiderrapante",
-    "desc": "Produz um filme de alta resistência ao tráfego com ação antiderrapante, dando ao piso brilho com aspecto molhado.",
+    "desc": "OCULTAR -Produz um filme de alta resistência ao tráfego com ação antiderrapante, dando ao piso brilho com aspecto molhado.",
     "precos": [
       [
         "1L / 2L / 5L",
@@ -1465,7 +1505,7 @@
   {
     "id": "imperflex",
     "cat": "Limpeza de Piso",
-    "nome": "Imperflex",
+    "nome": "Imperflex - Impermeabilizante de pedras naturais",
     "sub": "Impermeabilizante Acrílico para Pisos",
     "desc": "Para pisos frios — ação antiderrapante e auto brilhante, formando um filme de alta resistência ao tráfego. Protege, impermeabiliza e embeleza o piso em uma única aplicação.",
     "precos": [
@@ -1485,15 +1525,10 @@
   {
     "id": "campiso",
     "cat": "Limpeza de Piso",
-    "nome": "Campiso",
+    "nome": "Campiso - Limpa porcelanato",
     "sub": "Limpa Porcelanato – Uso Diário",
     "desc": "Ideal para limpeza e conservação diária de pisos de porcelanato e superfícies em geral. Remove sujidade superficial sem agredir o acabamento, mantendo o brilho.",
     "precos": [
-      [
-        "1L",
-        "Consulte",
-        ""
-      ],
       [
         "2L",
         "R$ 24,99",
@@ -1510,7 +1545,7 @@
   {
     "id": "selaflex",
     "cat": "Limpeza de Piso",
-    "nome": "Selaflex",
+    "nome": "Selaflex - Selador para pedras naturais porosas",
     "sub": "Selador de Pisos Porosos",
     "desc": "Prepara pisos porosos para receber ceras acrílicas e impermeabilizantes. Etapa fundamental para acabamento profissional e duradouro — sela os poros e melhora a aderência.",
     "precos": [
@@ -1521,7 +1556,7 @@
       ],
       [
         "5L",
-        "R$ 189,00",
+        "R$ 198,99",
         "COD 20424"
       ]
     ],
@@ -1530,13 +1565,13 @@
   {
     "id": "tomelimp",
     "cat": "Limpeza de Piso",
-    "nome": "Tomelimp",
+    "nome": "Tomelimp - Limpeza de pedra São Tomé",
     "sub": "Limpa Pedra São Tomé",
     "desc": "Remoção profunda de sujeiras e calcificações em pedras do tipo São Tomé. Penetra na textura rugosa e remove sujidade acumulada sem danificar a superfície.",
     "precos": [
       [
         "2L",
-        "R$ 69,99",
+        "R$ 34,99",
         "COD 20335"
       ],
       [
@@ -1560,8 +1595,8 @@
     "desc": "Alta estabilidade, baixa interferência no pH da água e efeito prolongado, reduzindo os custos de manutenção da piscina.",
     "precos": [
       [
-        "1kg / 5kg / 10kg / 20kg",
-        "Consulte",
+        "20kg",
+        "R$549,00",
         ""
       ]
     ],
@@ -1572,7 +1607,7 @@
     "cat": "Limpeza de Piscina",
     "nome": "Aqua 123",
     "sub": "Clarificante",
-    "desc": "Usado para limpar água com grande sujidade. Promove a aglutinação da sujeira, facilitando a remoção por filtragem ou aspiração.",
+    "desc": "OCULTAR - Usado para limpar água com grande sujidade. Promove a aglutinação da sujeira, facilitando a remoção por filtragem ou aspiração.",
     "precos": [
       [
         "1L / 5L",
