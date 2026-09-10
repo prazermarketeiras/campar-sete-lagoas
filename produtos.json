@@ -1528,5 +1528,110 @@
     ],
     "img": "campar_img/placeholder.svg",
     "emBreve": true
+  },
+  {
+    "id": "detergente_neutro_1l",
+    "cat": "Limpeza Geral",
+    "nome": "Detergente Líquido Neutro",
+    "sub": "Detergente Neutro 1L",
+    "desc": "Detergente líquido neutro para limpeza geral, embalagem de 1 litro.",
+    "precos": [
+      [
+        "1L",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/detergente_neutro_1l.jpg"
+  },
+  {
+    "id": "rodo",
+    "cat": "Equipamentos",
+    "nome": "Rodo",
+    "sub": "Equipamento de Limpeza",
+    "desc": "Rodo para limpeza e secagem de pisos, cabo resistente.",
+    "precos": [
+      [
+        "Unidade",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/rodo.jpg"
+  },
+  {
+    "id": "balde",
+    "cat": "Equipamentos",
+    "nome": "Balde",
+    "sub": "Equipamento de Limpeza",
+    "desc": "Balde plástico resistente para uso em limpeza geral. Disponível em outras cores.",
+    "precos": [
+      [
+        "Unidade",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/balde.jpg"
+  },
+  {
+    "id": "luva",
+    "cat": "Equipamentos",
+    "nome": "Luva de Proteção",
+    "sub": "Equipamento de Proteção Individual",
+    "desc": "Luva de proteção para manuseio de produtos de limpeza. Disponível em látex ou nitrílica.",
+    "precos": [
+      [
+        "Par",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/luva.jpg"
+  },
+  {
+    "id": "discos_polimento",
+    "cat": "Equipamentos",
+    "nome": "Discos de Polimento",
+    "sub": "Equipamento de Limpeza",
+    "desc": "Discos para polimento, lavagem e limpeza pesada de pisos com enceradeira/lavadora.",
+    "precos": [
+      [
+        "Unidade",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/discos_polimento.jpg"
+  },
+  {
+    "id": "vassoura",
+    "cat": "Equipamentos",
+    "nome": "Vassoura",
+    "sub": "Equipamento de Limpeza",
+    "desc": "Vassoura para varrição e limpeza geral de pisos.",
+    "precos": [
+      [
+        "Unidade",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/vassoura.jpg"
+  },
+  {
+    "id": "borrifador",
+    "cat": "Equipamentos",
+    "nome": "Borrifador",
+    "sub": "Equipamento de Limpeza",
+    "desc": "Borrifador manual para aplicação de produtos de limpeza.",
+    "precos": [
+      [
+        "Unidade",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/borrifador.jpg"
   }
 ]
