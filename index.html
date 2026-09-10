@@ -307,6 +307,11 @@
     width:100%;padding:6px;border:1.5px dashed var(--borda);border-radius:8px;
     background:none;color:var(--az2);font-size:.75rem;font-weight:600;cursor:pointer;margin-top:2px;
   }
+  .edit-toggle-ativo{
+    width:100%;padding:8px;border:1.5px solid #B8E0C4;border-radius:8px;
+    background:#EAFBF0;color:#1E8C4C;font-size:.75rem;font-weight:700;cursor:pointer;margin-bottom:8px;
+  }
+  .edit-toggle-ativo.inativo{background:#FFF3E0;border-color:#FFD8A8;color:#B4690E}
   .edit-bar{
     display:none;position:fixed;left:0;right:0;bottom:0;z-index:400;
     background:#0D3187;padding:10px 16px;gap:10px;
@@ -485,6 +490,14 @@ function editarCampo(id, campo, valor) {
   salvarRascunho();
 }
 
+function toggleAtivo(id) {
+  const p = PRODUTOS.find(x => x.id === id);
+  if (!p) return;
+  p.emBreve = !p.emBreve;
+  salvarRascunho();
+  render();
+}
+
 function editarPreco(id, idx, campo, valor) {
   const p = PRODUTOS.find(x => x.id === id);
   if (!p) return;
@@ -592,6 +605,9 @@ function renderCardEdicao(p) {
       <img src="${p.img}" alt="${escAttr(p.nome)}" loading="lazy">
     </div>
     <div class="card-body">
+      <button class="edit-toggle-ativo ${p.emBreve ? 'inativo' : ''}" onclick="toggleAtivo('${p.id}')">
+        ${p.emBreve ? '🔜 Inativo (em breve) — toque para ativar' : '✅ Ativo — toque para deixar em breve'}
+      </button>
       <div class="edit-field-label">Nome do produto</div>
       <input class="edit-input" value="${escAttr(p.nome)}" oninput="editarCampo('${p.id}','nome',this.value)">
       <div class="edit-field-label">Descrição</div>

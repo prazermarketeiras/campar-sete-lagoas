@@ -437,7 +437,7 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/limpador_perfumado_lavanda.jpg"
   },
   {
     "id": "limpador_perfumado_floral",
@@ -457,7 +457,7 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/limpador_perfumado_floral.jpg"
   },
   {
     "id": "limpador_perfumado_destaque",
@@ -479,21 +479,6 @@
     ],
     "img": "campar_img/placeholder.svg",
     "emBreve": true
-  },
-  {
-    "id": "bio_brilho_gel",
-    "cat": "Automotivo",
-    "nome": "nao tem",
-    "sub": "Brilha Painel Siliconado",
-    "desc": "nao tem ",
-    "precos": [
-      [
-        "500mL",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/bio_brilho_gel.jpg"
   },
   {
     "id": "bio_brilho_liq",
@@ -593,7 +578,8 @@
         ""
       ]
     ],
-    "img": "campar_img/autolav_comum.jpg"
+    "img": "campar_img/autolav_comum.jpg",
+    "emBreve": true
   },
   {
     "id": "cimecap",
@@ -618,7 +604,7 @@
   {
     "id": "minecap",
     "cat": "Automotivo",
-    "nome": "Minecap ( nao tem foto)",
+    "nome": "Minecap",
     "sub": "Desincrustante de Minério",
     "desc": "Limpeza pesada de veículos e equipamentos com depósito de minério. Alta performance para ambientes de mineração, transportadoras e indústria pesada.",
     "precos": [
@@ -633,12 +619,12 @@
         ""
       ]
     ],
-    "img": "campar_img/minecap.jpg"
+    "img": "campar_img/placeholder.svg"
   },
   {
     "id": "desengraxante_az",
     "cat": "Automotivo",
-    "nome": "Desengraxante AZ (foto)",
+    "nome": "Desengraxante AZ",
     "sub": "Desengraxante Alta Performance",
     "desc": "Para carros, equipamentos pesados e superfícies com acúmulo de óleo e graxa. Corta sujidade pesada com eficiência. Indicado para oficinas, transportadoras e frotas.",
     "precos": [
@@ -648,7 +634,7 @@
         ""
       ]
     ],
-    "img": "campar_img/desengraxante_az.jpg"
+    "img": "campar_img/placeholder.svg"
   },
   {
     "id": "limpi_alum",
@@ -678,7 +664,7 @@
   {
     "id": "biograx",
     "cat": "Automotivo",
-    "nome": "Biograx (não tem foto)",
+    "nome": "Biograx",
     "sub": "Pasta Desengraxante para Mãos",
     "desc": "Em breve - Remove óleo, graxa e sujidades pesadas das mãos após trabalho mecânico. Alto poder desengordurante com fórmula que protege a pele do ressecamento — limpeza profunda sem agredir.",
     "precos": [
@@ -688,7 +674,7 @@
         ""
       ]
     ],
-    "img": "campar_img/biograx.jpg",
+    "img": "campar_img/placeholder.svg",
     "emBreve": true
   },
   {
@@ -1000,7 +986,7 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/butilglicol.jpg"
   },
   {
     "id": "det_neutro_hospitalar",
