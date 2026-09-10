@@ -878,21 +878,6 @@
     "img": "campar_img/soluban.jpg"
   },
   {
-    "id": "arocitro",
-    "cat": "Especial",
-    "nome": "Aromar ",
-    "sub": "Aromatizante e Inibidor de Odores Fortes",
-    "desc": "Aromatiza e neutraliza odores fortes em ambientes domésticos, comerciais e industriais. Uso puro ou diluído, para quando o cheiro é realmente difícil de disfarçar.",
-    "precos": [
-      [
-        "1L",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/placeholder.svg"
-  },
-  {
     "id": "suape",
     "cat": "Especial",
     "nome": "SOAP Sabonete Liquido ",
@@ -915,7 +900,7 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/suape.jpg"
   },
   {
     "id": "alvejar_mais",
@@ -989,21 +974,6 @@
     "img": "campar_img/butilglicol.jpg"
   },
   {
-    "id": "det_neutro_hospitalar",
-    "cat": "Especial",
-    "nome": "Detergente Neutro Hospitalar",
-    "sub": "Limpeza de Superfícies em Geral",
-    "desc": "DEIXAR OCULTO Alto poder de solubilização de gorduras vegetais e animais. Indicado para a limpeza de superfícies em ambientes hospitalares e clínicos.",
-    "precos": [
-      [
-        "1L / 5L",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/placeholder.svg"
-  },
-  {
     "id": "fog_7201",
     "cat": "Especial",
     "nome": "FOG 7201",
@@ -1016,7 +986,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "emBreve": true
   },
   {
     "id": "lg403",
@@ -1031,7 +1002,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "emBreve": true
   },
   {
     "id": "ind_7017",
@@ -1046,7 +1018,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "emBreve": true
   },
   {
     "id": "ind_7018",
@@ -1061,7 +1034,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "emBreve": true
   },
   {
     "id": "vaselina",
@@ -1091,7 +1065,8 @@
         ""
       ]
     ],
-    "img": "campar_img/vaselina.jpg"
+    "img": "campar_img/vaselina.jpg",
+    "emBreve": true
   },
   {
     "id": "aromar_kaiak",
@@ -1151,7 +1126,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "emBreve": true
   },
   {
     "id": "alcool_gel",
@@ -1207,41 +1183,6 @@
       ]
     ],
     "img": "campar_img/alcool_92.jpg"
-  },
-  {
-    "id": "soap_liq",
-    "cat": "Especial",
-    "nome": "Pode retirar ",
-    "sub": "Talco · Dove · Bamboo · Marine · Erva Doce · Pêssego · Trosseaud · Phebo",
-    "desc": "Versão líquida do Soap para higiene diária das mãos. A mesma qualidade e suavidade, com fácil aplicação e rinse rápido. Pele macia, hidratada e perfumada.",
-    "precos": [
-      [
-        "1L",
-        "Consulte",
-        ""
-      ],
-      [
-        "2L",
-        "Consulte",
-        ""
-      ],
-      [
-        "5L",
-        "R$ 54,99",
-        "COD 20283"
-      ],
-      [
-        "20L",
-        "Consulte",
-        ""
-      ],
-      [
-        "50L",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/soap_liq.jpg"
   },
   {
     "id": "placosol",
@@ -1306,7 +1247,8 @@
         ""
       ]
     ],
-    "img": "campar_img/querosene.jpg"
+    "img": "campar_img/querosene.jpg",
+    "emBreve": true
   },
   {
     "id": "aguarras",
@@ -1321,7 +1263,8 @@
         ""
       ]
     ],
-    "img": "campar_img/aguarras.jpg"
+    "img": "campar_img/aguarras.jpg",
+    "emBreve": true
   },
   {
     "id": "lauril",
@@ -1446,7 +1389,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "emBreve": true
   },
   {
     "id": "restaurex",
@@ -1461,7 +1405,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "emBreve": true
   },
   {
     "id": "campmax",
@@ -1601,6 +1546,7 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "emBreve": true
   }
 ]
