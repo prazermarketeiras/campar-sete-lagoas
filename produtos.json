@@ -695,7 +695,8 @@
         ""
       ]
     ],
-    "img": "campar_img/dex_cap.jpg"
+    "img": "campar_img/dex_cap.jpg",
+    "emBreve": true
   },
   {
     "id": "amaciante",
