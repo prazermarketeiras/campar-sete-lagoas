@@ -924,27 +924,6 @@
     "img": "campar_img/alvejar_mais.jpg"
   },
   {
-    "id": "tira_manchas_concentrado",
-    "cat": "Lavanderia",
-    "nome": "EASY CLEAN - Tira-Manchas Concentrado",
-    "sub": "Similar a Vanish Líquido (mais forte)",
-    "desc": "Fórmula concentrada para remoção de manchas difíceis em tecidos, com poder de ação superior às opções tradicionais do mercado.",
-    "precos": [
-      [
-        "5L",
-        "R$86,99",
-        ""
-      ],
-      [
-        "20L",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/tira_manchas_concentrado.jpg",
-    "emBreve": false
-  },
-  {
     "id": "lg401",
     "cat": "Especial",
     "nome": "LG 401 Antimofo",
