@@ -560,7 +560,7 @@
     "cat": "Automotivo",
     "nome": "Autolav Comum",
     "sub": "Detergente Automotivo",
-    "desc": "DEIXAR INATIVO, QUANDO TIVER ATIVAR O PRODUTO etergente específico para lavagem de todo tipo de veículo. Fórmula suave que não agride cromados, borrachas e vidros, garantindo lavagem segura e resultado limpo.",
+    "desc": "Detergente específico para lavagem de todo tipo de veículo. Fórmula suave que não agride cromados, borrachas e vidros, garantindo lavagem segura e resultado limpo.",
     "precos": [
       [
         "2L",
@@ -666,7 +666,7 @@
     "cat": "Automotivo",
     "nome": "Biograx",
     "sub": "Pasta Desengraxante para Mãos",
-    "desc": "Em breve - Remove óleo, graxa e sujidades pesadas das mãos após trabalho mecânico. Alto poder desengordurante com fórmula que protege a pele do ressecamento — limpeza profunda sem agredir.",
+    "desc": " Remove óleo, graxa e sujidades pesadas das mãos após trabalho mecânico. Alto poder desengordurante com fórmula que protege a pele do ressecamento — limpeza profunda sem agredir.",
     "precos": [
       [
         "500g / 1kg / 5kg",
@@ -682,7 +682,7 @@
     "cat": "Automotivo",
     "nome": "Dex Cap",
     "sub": "Desengraxante Premium Concentrado 100x",
-    "desc": "Em breve - Sem ácido, altíssima performance para limpeza e decapagem de carros, motos e equipamentos industriais. Ultra concentrado — rende até 100 vezes mais. Econômico e eficiente.",
+    "desc": " Sem ácido, altíssima performance para limpeza e decapagem de carros, motos e equipamentos industriais. Ultra concentrado — rende até 100 vezes mais. Econômico e eficiente.",
     "precos": [
       [
         "2L",
@@ -1361,7 +1361,7 @@
     "cat": "Limpeza de Piso",
     "nome": "Pos Limp",
     "sub": "Fim de Obras",
-    "desc": "OCULTAR - Limpeza e remoção de sujidades incrustadas no piso e em superfícies em geral após reformas e obras.",
+    "desc": " Limpeza e remoção de sujidades incrustadas no piso e em superfícies em geral após reformas e obras.",
     "precos": [
       [
         "2L / 5L",
@@ -1377,7 +1377,7 @@
     "cat": "Limpeza de Piso",
     "nome": "Restaurex",
     "sub": "Restaurador de Brilho Antiderrapante",
-    "desc": "OCULTAR -Produz um filme de alta resistência ao tráfego com ação antiderrapante, dando ao piso brilho com aspecto molhado.",
+    "desc": "Produz um filme de alta resistência ao tráfego com ação antiderrapante, dando ao piso brilho com aspecto molhado.",
     "precos": [
       [
         "1L / 2L / 5L",
@@ -1518,7 +1518,7 @@
     "cat": "Limpeza de Piscina",
     "nome": "Aqua 123",
     "sub": "Clarificante",
-    "desc": "OCULTAR - Usado para limpar água com grande sujidade. Promove a aglutinação da sujeira, facilitando a remoção por filtragem ou aspiração.",
+    "desc": " Usado para limpar água com grande sujidade. Promove a aglutinação da sujeira, facilitando a remoção por filtragem ou aspiração.",
     "precos": [
       [
         "1L / 5L",
