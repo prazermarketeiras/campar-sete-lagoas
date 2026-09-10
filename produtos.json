@@ -978,7 +978,7 @@
     "cat": "Especial",
     "nome": "FOG 7201",
     "sub": "Álcool Gel Inflamável para Rechaud e Fogareiro",
-    "desc": "DEIXAR OCULTO - Utilizado para queima em rechauds para aquecimento de alimentos, acendimento de churrasqueiras e lareiras.",
+    "desc": "Utilizado para queima em rechauds para aquecimento de alimentos, acendimento de churrasqueiras e lareiras.",
     "precos": [
       [
         "1L / 5L / 10L",
@@ -994,7 +994,7 @@
     "cat": "Especial",
     "nome": "LG 403",
     "sub": "Sabão para Remoção de Sangue",
-    "desc": "DEIXAR OCULTO - Indicado para a remoção de manchas de sangue em superfícies e tecidos.",
+    "desc": "Indicado para a remoção de manchas de sangue em superfícies e tecidos.",
     "precos": [
       [
         "1L / 2L / 5L",
@@ -1010,7 +1010,7 @@
     "cat": "Especial",
     "nome": "IND 7017",
     "sub": "Desincrustante para Torres de Resfriamento",
-    "desc": "DEIXAR OCULTO Limpeza pesada de equipamentos e tubulações industriais com incrustação.",
+    "desc": "Limpeza pesada de equipamentos e tubulações industriais com incrustação.",
     "precos": [
       [
         "5L / 50L",
@@ -1026,7 +1026,7 @@
     "cat": "Especial",
     "nome": "IND 7018",
     "sub": "Antifúngico",
-    "desc": "DEIXAR OCULTO Indicado para evitar a corrosão e proteger peças ferrosas contra fungos e oxidação.",
+    "desc": "Indicado para evitar a corrosão e proteger peças ferrosas contra fungos e oxidação.",
     "precos": [
       [
         "5L",
@@ -1042,7 +1042,7 @@
     "cat": "Especial",
     "nome": "Vaselina Líquida",
     "sub": "Emoliente e Lubrificante",
-    "desc": "DEIXAR OCULTO Propriedades desengordurantes, emolientes, espessantes e lubrificantes. Amplamente usado na composição de outros produtos e em aplicações industriais e cosméticas.",
+    "desc": "Propriedades desengordurantes, emolientes, espessantes e lubrificantes. Amplamente usado na composição de outros produtos e em aplicações industriais e cosméticas.",
     "precos": [
       [
         "2L",
@@ -1239,7 +1239,7 @@
     "cat": "Especial",
     "nome": "Querosene Desodorizado",
     "sub": "Solvente e Diluente",
-    "desc": "DEIXAR OCULTO - Remove graxa e óleo, limpa equipamentos e dilui tintas e vernizes. Versão desodorizada para uso mais confortável — mesmo poder de limpeza sem o odor forte.",
+    "desc": "Remove graxa e óleo, limpa equipamentos e dilui tintas e vernizes. Versão desodorizada para uso mais confortável — mesmo poder de limpeza sem o odor forte.",
     "precos": [
       [
         "2L",
@@ -1255,7 +1255,7 @@
     "cat": "Especial",
     "nome": "Aguarrás",
     "sub": "Solvente e Diluente",
-    "desc": "DEIXAR OCULTO - Clássico removedor de óleo e graxa. Indicado para limpeza de equipamentos e diluição de tintas e vernizes. Uso amplo em pintura, manutenção e limpeza industrial.",
+    "desc": "Clássico removedor de óleo e graxa. Indicado para limpeza de equipamentos e diluição de tintas e vernizes. Uso amplo em pintura, manutenção e limpeza industrial.",
     "precos": [
       [
         "2L",
