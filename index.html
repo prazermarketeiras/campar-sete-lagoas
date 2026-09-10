@@ -630,12 +630,12 @@ function render() {
   
   const filtrados = PRODUTOS.filter(p => {
     const matchCat = catAtiva === "Todos" || p.cat === catAtiva;
-    const matchBusca = !busca || 
-      p.nome.toLowerCase().includes(busca) || 
+    const matchBusca = !busca ||
+      p.nome.toLowerCase().includes(busca) ||
       p.sub.toLowerCase().includes(busca) ||
       p.desc.toLowerCase().includes(busca);
     return matchCat && matchBusca;
-  });
+  }).sort((a, b) => (a.emBreve ? 1 : 0) - (b.emBreve ? 1 : 0));
 
   if (!filtrados.length) {
     grid.innerHTML = '<div class="no-results">Nenhum produto encontrado 🔍</div>';
