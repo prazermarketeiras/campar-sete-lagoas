@@ -22,7 +22,8 @@
         ""
       ]
     ],
-    "img": "campar_img/amoniex.jpg"
+    "img": "campar_img/amoniex.jpg",
+    "codigo": ""
   },
   {
     "id": "detmais",
@@ -52,7 +53,8 @@
         ""
       ]
     ],
-    "img": "campar_img/detmais.jpg"
+    "img": "campar_img/detmais.jpg",
+    "codigo": ""
   },
   {
     "id": "forno_sd",
@@ -77,7 +79,8 @@
         ""
       ]
     ],
-    "img": "campar_img/forno_sd.jpg"
+    "img": "campar_img/forno_sd.jpg",
+    "codigo": ""
   },
   {
     "id": "nullbac",
@@ -97,7 +100,8 @@
         ""
       ]
     ],
-    "img": "campar_img/nullbac.jpg"
+    "img": "campar_img/nullbac.jpg",
+    "codigo": ""
   },
   {
     "id": "easy_clean",
@@ -117,7 +121,8 @@
         ""
       ]
     ],
-    "img": "campar_img/easy_clean.jpg"
+    "img": "campar_img/easy_clean.jpg",
+    "codigo": ""
   },
   {
     "id": "gel_mix",
@@ -161,7 +166,8 @@
           ]
         ]
       }
-    ]
+    ],
+    "codigo": ""
   },
   {
     "id": "limpa_telhas",
@@ -176,7 +182,8 @@
         ""
       ]
     ],
-    "img": "campar_img/limpa_telhas.jpg"
+    "img": "campar_img/limpa_telhas.jpg",
+    "codigo": ""
   },
   {
     "id": "vitrix",
@@ -196,7 +203,8 @@
         "COD 20281"
       ]
     ],
-    "img": "campar_img/vitrix.jpg"
+    "img": "campar_img/vitrix.jpg",
+    "codigo": ""
   },
   {
     "id": "tapetex",
@@ -221,7 +229,8 @@
         ""
       ]
     ],
-    "img": "campar_img/tapetex.jpg"
+    "img": "campar_img/tapetex.jpg",
+    "codigo": ""
   },
   {
     "id": "proquimol",
@@ -241,7 +250,8 @@
         ""
       ]
     ],
-    "img": "campar_img/proquimol.jpg"
+    "img": "campar_img/proquimol.jpg",
+    "codigo": ""
   },
   {
     "id": "multicamp",
@@ -266,7 +276,8 @@
         ""
       ]
     ],
-    "img": "campar_img/multicamp.jpg"
+    "img": "campar_img/multicamp.jpg",
+    "codigo": ""
   },
   {
     "id": "polimov",
@@ -281,7 +292,8 @@
         "COD 20332"
       ]
     ],
-    "img": "campar_img/polimov.jpg"
+    "img": "campar_img/polimov.jpg",
+    "codigo": ""
   },
   {
     "id": "pasta_brilho",
@@ -296,7 +308,8 @@
         "COD 20497"
       ]
     ],
-    "img": "campar_img/pasta_brilho.jpg"
+    "img": "campar_img/pasta_brilho.jpg",
+    "codigo": ""
   },
   {
     "id": "limpador_perfumado",
@@ -409,7 +422,8 @@
         ],
         "emBreve": true
       }
-    ]
+    ],
+    "codigo": ""
   },
   {
     "id": "bio_brilho_liq",
@@ -424,7 +438,8 @@
         "COD 20541"
       ]
     ],
-    "img": "campar_img/bio_brilho_liq.jpg"
+    "img": "campar_img/bio_brilho_liq.jpg",
+    "codigo": ""
   },
   {
     "id": "desengraxante_rs",
@@ -444,7 +459,8 @@
         ""
       ]
     ],
-    "img": "campar_img/desengraxante_rs.jpg"
+    "img": "campar_img/desengraxante_rs.jpg",
+    "codigo": ""
   },
   {
     "id": "pneu_premium",
@@ -459,7 +475,8 @@
         "COD 20535"
       ]
     ],
-    "img": "campar_img/pneu_premium.jpg"
+    "img": "campar_img/pneu_premium.jpg",
+    "codigo": ""
   },
   {
     "id": "autolav_cera",
@@ -484,7 +501,8 @@
         ""
       ]
     ],
-    "img": "campar_img/autolav_cera.jpg"
+    "img": "campar_img/autolav_cera.jpg",
+    "codigo": ""
   },
   {
     "id": "autolav_comum",
@@ -510,7 +528,8 @@
       ]
     ],
     "img": "campar_img/autolav_comum.jpg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "cimecap",
@@ -530,7 +549,8 @@
         ""
       ]
     ],
-    "img": "campar_img/cimecap.jpg"
+    "img": "campar_img/cimecap.jpg",
+    "codigo": ""
   },
   {
     "id": "minecap",
@@ -550,7 +570,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "codigo": ""
   },
   {
     "id": "desengraxante_az",
@@ -565,7 +586,8 @@
         ""
       ]
     ],
-    "img": "campar_img/desengraxante_az.jpg"
+    "img": "campar_img/desengraxante_az.jpg",
+    "codigo": ""
   },
   {
     "id": "limpi_alum",
@@ -590,7 +612,8 @@
         ""
       ]
     ],
-    "img": "campar_img/limpi_alum.jpg"
+    "img": "campar_img/limpi_alum.jpg",
+    "codigo": ""
   },
   {
     "id": "biograx",
@@ -606,7 +629,8 @@
       ]
     ],
     "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "dex_cap",
@@ -627,7 +651,8 @@
       ]
     ],
     "img": "campar_img/dex_cap.jpg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "amaciante",
@@ -657,7 +682,8 @@
         ""
       ]
     ],
-    "img": "campar_img/amaciante.jpg"
+    "img": "campar_img/amaciante.jpg",
+    "codigo": ""
   },
   {
     "id": "cloro_liq",
@@ -682,7 +708,8 @@
         ""
       ]
     ],
-    "img": "campar_img/cloro_liq.jpg"
+    "img": "campar_img/cloro_liq.jpg",
+    "codigo": ""
   },
   {
     "id": "agua_sanitaria",
@@ -707,7 +734,8 @@
         ""
       ]
     ],
-    "img": "campar_img/agua_sanitaria.jpg"
+    "img": "campar_img/agua_sanitaria.jpg",
+    "codigo": ""
   },
   {
     "id": "campast",
@@ -737,7 +765,8 @@
         ""
       ]
     ],
-    "img": "campar_img/campast.jpg"
+    "img": "campar_img/campast.jpg",
+    "codigo": ""
   },
   {
     "id": "camplimp",
@@ -767,7 +796,8 @@
         ""
       ]
     ],
-    "img": "campar_img/camplimp.jpg"
+    "img": "campar_img/camplimp.jpg",
+    "codigo": ""
   },
   {
     "id": "camplimp_po",
@@ -782,7 +812,8 @@
         ""
       ]
     ],
-    "img": "campar_img/camplimp_po.jpg"
+    "img": "campar_img/camplimp_po.jpg",
+    "codigo": ""
   },
   {
     "id": "soluban",
@@ -807,7 +838,8 @@
         ""
       ]
     ],
-    "img": "campar_img/soluban.jpg"
+    "img": "campar_img/soluban.jpg",
+    "codigo": ""
   },
   {
     "id": "suape",
@@ -832,7 +864,8 @@
         ""
       ]
     ],
-    "img": "campar_img/suape.jpg"
+    "img": "campar_img/suape.jpg",
+    "codigo": ""
   },
   {
     "id": "alvejar_mais",
@@ -852,7 +885,8 @@
         ""
       ]
     ],
-    "img": "campar_img/alvejar_mais.jpg"
+    "img": "campar_img/alvejar_mais.jpg",
+    "codigo": ""
   },
   {
     "id": "lg401",
@@ -867,7 +901,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "codigo": ""
   },
   {
     "id": "butilglicol",
@@ -882,7 +917,8 @@
         ""
       ]
     ],
-    "img": "campar_img/butilglicol.jpg"
+    "img": "campar_img/butilglicol.jpg",
+    "codigo": ""
   },
   {
     "id": "fog_7201",
@@ -898,7 +934,8 @@
       ]
     ],
     "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "lg403",
@@ -914,7 +951,8 @@
       ]
     ],
     "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "ind_7017",
@@ -930,7 +968,8 @@
       ]
     ],
     "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "ind_7018",
@@ -946,7 +985,8 @@
       ]
     ],
     "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "vaselina",
@@ -977,7 +1017,8 @@
       ]
     ],
     "img": "campar_img/vaselina.jpg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "aromar",
@@ -1036,7 +1077,8 @@
         ],
         "emBreve": true
       }
-    ]
+    ],
+    "codigo": ""
   },
   {
     "id": "alcool_gel",
@@ -1066,7 +1108,8 @@
         ""
       ]
     ],
-    "img": "campar_img/alcool_gel.jpg"
+    "img": "campar_img/alcool_gel.jpg",
+    "codigo": ""
   },
   {
     "id": "alcool_92",
@@ -1091,7 +1134,8 @@
         ""
       ]
     ],
-    "img": "campar_img/alcool_92.jpg"
+    "img": "campar_img/alcool_92.jpg",
+    "codigo": ""
   },
   {
     "id": "placosol",
@@ -1116,7 +1160,8 @@
         "COD 20324"
       ]
     ],
-    "img": "campar_img/placosol.jpg"
+    "img": "campar_img/placosol.jpg",
+    "codigo": ""
   },
   {
     "id": "placosol_solar",
@@ -1141,7 +1186,8 @@
         "COD 20324"
       ]
     ],
-    "img": "campar_img/placosol.jpg"
+    "img": "campar_img/placosol.jpg",
+    "codigo": ""
   },
   {
     "id": "thinner",
@@ -1166,7 +1212,8 @@
         ""
       ]
     ],
-    "img": "campar_img/thinner.jpg"
+    "img": "campar_img/thinner.jpg",
+    "codigo": ""
   },
   {
     "id": "querosene",
@@ -1182,7 +1229,8 @@
       ]
     ],
     "img": "campar_img/querosene.jpg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "aguarras",
@@ -1198,7 +1246,8 @@
       ]
     ],
     "img": "campar_img/aguarras.jpg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "lauril",
@@ -1213,7 +1262,8 @@
         ""
       ]
     ],
-    "img": "campar_img/lauril.jpg"
+    "img": "campar_img/lauril.jpg",
+    "codigo": ""
   },
   {
     "id": "acrilex",
@@ -1233,7 +1283,8 @@
         "COD 20348"
       ]
     ],
-    "img": "campar_img/acrilex.jpg"
+    "img": "campar_img/acrilex.jpg",
+    "codigo": ""
   },
   {
     "id": "campedra",
@@ -1253,7 +1304,8 @@
         "COD 20330"
       ]
     ],
-    "img": "campar_img/campedra.jpg"
+    "img": "campar_img/campedra.jpg",
+    "codigo": ""
   },
   {
     "id": "ceraflex",
@@ -1273,7 +1325,8 @@
         "COD 20346"
       ]
     ],
-    "img": "campar_img/ceraflex.jpg"
+    "img": "campar_img/ceraflex.jpg",
+    "codigo": ""
   },
   {
     "id": "restaurador_mop",
@@ -1288,7 +1341,8 @@
         "COD 20386"
       ]
     ],
-    "img": "campar_img/restaurador_mop.jpg"
+    "img": "campar_img/restaurador_mop.jpg",
+    "codigo": ""
   },
   {
     "id": "remoflex",
@@ -1308,7 +1362,8 @@
         "COD 20432"
       ]
     ],
-    "img": "campar_img/remoflex.jpg"
+    "img": "campar_img/remoflex.jpg",
+    "codigo": ""
   },
   {
     "id": "pos_limp",
@@ -1324,7 +1379,8 @@
       ]
     ],
     "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "restaurex",
@@ -1340,7 +1396,8 @@
       ]
     ],
     "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "campmax",
@@ -1365,7 +1422,8 @@
         ""
       ]
     ],
-    "img": "campar_img/campmax.jpg"
+    "img": "campar_img/campmax.jpg",
+    "codigo": ""
   },
   {
     "id": "imperflex",
@@ -1385,7 +1443,8 @@
         "COD 20345"
       ]
     ],
-    "img": "campar_img/imperflex.jpg"
+    "img": "campar_img/imperflex.jpg",
+    "codigo": ""
   },
   {
     "id": "campiso",
@@ -1405,7 +1464,8 @@
         ""
       ]
     ],
-    "img": "campar_img/campiso.jpg"
+    "img": "campar_img/campiso.jpg",
+    "codigo": ""
   },
   {
     "id": "selaflex",
@@ -1425,7 +1485,8 @@
         "COD 20424"
       ]
     ],
-    "img": "campar_img/selaflex.jpg"
+    "img": "campar_img/selaflex.jpg",
+    "codigo": ""
   },
   {
     "id": "tomelimp",
@@ -1450,7 +1511,8 @@
         ""
       ]
     ],
-    "img": "campar_img/tomelimp.jpg"
+    "img": "campar_img/tomelimp.jpg",
+    "codigo": ""
   },
   {
     "id": "dicloro57",
@@ -1465,7 +1527,8 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/placeholder.svg",
+    "codigo": ""
   },
   {
     "id": "aqua123",
@@ -1481,7 +1544,8 @@
       ]
     ],
     "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "emBreve": true,
+    "codigo": ""
   },
   {
     "id": "detergente_neutro_1l",
@@ -1496,7 +1560,8 @@
         ""
       ]
     ],
-    "img": "campar_img/detergente_neutro_1l.jpg"
+    "img": "campar_img/detergente_neutro_1l.jpg",
+    "codigo": ""
   },
   {
     "id": "rodo",
@@ -1511,7 +1576,8 @@
         ""
       ]
     ],
-    "img": "campar_img/rodo.jpg"
+    "img": "campar_img/rodo.jpg",
+    "codigo": ""
   },
   {
     "id": "balde",
@@ -1526,7 +1592,8 @@
         ""
       ]
     ],
-    "img": "campar_img/balde.jpg"
+    "img": "campar_img/balde.jpg",
+    "codigo": ""
   },
   {
     "id": "luva",
@@ -1541,7 +1608,8 @@
         ""
       ]
     ],
-    "img": "campar_img/luva.jpg"
+    "img": "campar_img/luva.jpg",
+    "codigo": ""
   },
   {
     "id": "discos_polimento",
@@ -1556,7 +1624,8 @@
         ""
       ]
     ],
-    "img": "campar_img/discos_polimento.jpg"
+    "img": "campar_img/discos_polimento.jpg",
+    "codigo": ""
   },
   {
     "id": "vassoura",
@@ -1571,7 +1640,8 @@
         ""
       ]
     ],
-    "img": "campar_img/vassoura.jpg"
+    "img": "campar_img/vassoura.jpg",
+    "codigo": ""
   },
   {
     "id": "borrifador",
@@ -1586,7 +1656,8 @@
         ""
       ]
     ],
-    "img": "campar_img/borrifador.jpg"
+    "img": "campar_img/borrifador.jpg",
+    "codigo": ""
   },
   {
     "id": "czi_701",
@@ -1601,7 +1672,8 @@
         ""
       ]
     ],
-    "img": "campar_img/czi_701.jpg"
+    "img": "campar_img/czi_701.jpg",
+    "codigo": ""
   },
   {
     "id": "czi_703",
@@ -1616,7 +1688,8 @@
         ""
       ]
     ],
-    "img": "campar_img/czi_703.jpg"
+    "img": "campar_img/czi_703.jpg",
+    "codigo": ""
   },
   {
     "id": "escova_enceradeira",
@@ -1631,7 +1704,8 @@
         ""
       ]
     ],
-    "img": "campar_img/escova_enceradeira.jpg"
+    "img": "campar_img/escova_enceradeira.jpg",
+    "codigo": ""
   },
   {
     "id": "rastelo",
@@ -1646,7 +1720,8 @@
         ""
       ]
     ],
-    "img": "campar_img/rastelo.jpg"
+    "img": "campar_img/rastelo.jpg",
+    "codigo": ""
   },
   {
     "id": "rodo_aluminio",
@@ -1661,7 +1736,8 @@
         ""
       ]
     ],
-    "img": "campar_img/rodo_aluminio.jpg"
+    "img": "campar_img/rodo_aluminio.jpg",
+    "codigo": ""
   },
   {
     "id": "enceradeira_aluguel",
@@ -1676,7 +1752,8 @@
         ""
       ]
     ],
-    "img": "campar_img/enceradeira_aluguel.jpg"
+    "img": "campar_img/enceradeira_aluguel.jpg",
+    "codigo": ""
   },
   {
     "id": "maquina_extratora",
@@ -1691,7 +1768,8 @@
         ""
       ]
     ],
-    "img": "campar_img/maquina_extratora.jpg"
+    "img": "campar_img/maquina_extratora.jpg",
+    "codigo": ""
   },
   {
     "id": "aspirador_po_agua",
@@ -1706,7 +1784,8 @@
         ""
       ]
     ],
-    "img": "campar_img/aspirador_po_agua.jpg"
+    "img": "campar_img/aspirador_po_agua.jpg",
+    "codigo": ""
   },
   {
     "id": "maquina_pressao",
@@ -1721,7 +1800,8 @@
         ""
       ]
     ],
-    "img": "campar_img/maquina_pressao.jpg"
+    "img": "campar_img/maquina_pressao.jpg",
+    "codigo": ""
   },
   {
     "id": "kit1_mensal",
@@ -1736,7 +1816,8 @@
         ""
       ]
     ],
-    "img": "campar_img/kit1_mensal.jpg"
+    "img": "campar_img/kit1_mensal.jpg",
+    "codigo": ""
   },
   {
     "id": "kit2_premium",
@@ -1751,7 +1832,8 @@
         ""
       ]
     ],
-    "img": "campar_img/kit2_premium.jpg"
+    "img": "campar_img/kit2_premium.jpg",
+    "codigo": ""
   },
   {
     "id": "kit3_pet",
@@ -1766,7 +1848,8 @@
         ""
       ]
     ],
-    "img": "campar_img/kit3_pet.jpg"
+    "img": "campar_img/kit3_pet.jpg",
+    "codigo": ""
   },
   {
     "id": "kit4_economico",
@@ -1781,6 +1864,7 @@
         ""
       ]
     ],
-    "img": "campar_img/kit4_economico.jpg"
+    "img": "campar_img/kit4_economico.jpg",
+    "codigo": ""
   }
 ]

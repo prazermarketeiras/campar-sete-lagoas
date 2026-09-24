@@ -776,6 +776,8 @@ function renderCardEdicao(p) {
       </button>
       <div class="edit-field-label">Nome do produto</div>
       <input class="edit-input" value="${escAttr(p.nome)}" oninput="editarCampo('${p.id}','nome',this.value)">
+      <div class="edit-field-label">Código do produto (uso interno — não aparece pro cliente)</div>
+      <input class="edit-input" value="${escAttr(p.codigo || '')}" placeholder="Ex: 20356" oninput="editarCampo('${p.id}','codigo',this.value)">
       <div class="edit-field-label">Descrição</div>
       <textarea class="edit-textarea" oninput="editarCampo('${p.id}','desc',this.value)">${escAttr(p.desc)}</textarea>
       <div class="edit-field-label">Tamanhos e preços</div>
@@ -800,6 +802,8 @@ function renderCardEdicaoVariantes(p) {
     <div class="card-body">
       <div class="edit-field-label">Nome do produto (base)</div>
       <input class="edit-input" value="${escAttr(p.nome)}" oninput="editarCampo('${p.id}','nome',this.value)">
+      <div class="edit-field-label">Código do produto (uso interno — não aparece pro cliente)</div>
+      <input class="edit-input" value="${escAttr(p.codigo || '')}" placeholder="Ex: 20356" oninput="editarCampo('${p.id}','codigo',this.value)">
       <div class="edit-field-label">Descrição geral</div>
       <textarea class="edit-textarea" oninput="editarCampo('${p.id}','desc',this.value)">${escAttr(p.desc)}</textarea>
       <div class="edit-field-label" style="margin-top:10px">Fragrâncias</div>
@@ -1021,6 +1025,7 @@ function addCarrinho(id, precoIdx, qtd, varianteIdx) {
   } else {
     carrinho.push({
       id, nome: nomeItem, tam: pr[0], preco: pr[1], img: imgItem, qtd,
+      codigo: p.codigo || '',
       uid: Date.now() + Math.random()
     });
   }
@@ -1148,7 +1153,8 @@ function enviarWA() {
   if (!carrinho.length) return;
   let msg = "Olá! Gostaria de fazer o seguinte pedido:\n\n";
   carrinho.forEach((i,idx) => {
-    msg += `${idx+1}. ${i.nome} – ${i.tam} × ${i.qtd} (${subtotalItem(i)})\n`;
+    const cod = i.codigo ? ` [Cód: ${i.codigo}]` : '';
+    msg += `${idx+1}. ${i.nome} – ${i.tam} × ${i.qtd} (${subtotalItem(i)})${cod}\n`;
   });
 
   const totalNum = carrinho.reduce((acc,i) => {
