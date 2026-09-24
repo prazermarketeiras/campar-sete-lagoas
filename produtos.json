@@ -980,65 +980,63 @@
     "emBreve": true
   },
   {
-    "id": "aromar_kaiak",
+    "id": "aromar",
     "cat": "Casa",
-    "nome": "Aromar Kaiak",
+    "nome": "Aromar",
     "sub": "Odorizador de Ambientes",
-    "desc": "Elimina odores e aromatiza ambientes domésticos, comerciais e industriais com a fragrância marcante e fresca do Kaiak. Ideal para recepções e banheiros que precisam causar boa impressão.",
-    "precos": [
-      [
-        "1L",
-        "R$ 42,99",
-        "COD 20398"
-      ]
-    ],
-    "img": "campar_img/aromar_kaiak.jpg"
-  },
-  {
-    "id": "aromar_bamboo",
-    "cat": "Casa",
-    "nome": "Aromar Bamboo",
-    "sub": "Odorizador de Ambientes",
-    "desc": "Fragrância Bamboo, leve e natural, para ambientes que precisam de frescor e sofisticação. Transforma qualquer espaço com aroma agradável e duradouro.",
-    "precos": [
-      [
-        "1L",
-        "R$ 42,99",
-        "COD 20333"
-      ]
-    ],
-    "img": "campar_img/aromar_bamboo.jpg"
-  },
-  {
-    "id": "aromar_destak",
-    "cat": "Casa",
-    "nome": "Aromar Destak",
-    "sub": "Odorizador de Ambientes",
-    "desc": "Fragrância Destak com personalidade marcante para quem quer impressionar. Ideal para ambientes comerciais, recepções e espaços onde a primeira impressão importa.",
-    "precos": [
-      [
-        "1L",
-        "R$ 51,99",
-        "COD 20397"
-      ]
-    ],
-    "img": "campar_img/aromar_destak.jpg"
-  },
-  {
-    "id": "aromar_ultrassom",
-    "cat": "Casa",
-    "nome": "Aromar trousseau",
-    "sub": "Odorizador de Ambientes",
-    "desc": "em breve - Fragrância marcante para aromatizar ambientes domésticos, comerciais e industriais.",
-    "precos": [
-      [
-        "1L",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "desc": "Elimina odores e aromatiza ambientes domésticos, comerciais e industriais. Escolha a fragrância ao adicionar ao pedido.",
+    "img": "campar_img/aromar_kaiak.jpg",
+    "variantes": [
+      {
+        "nome": "Kaiak",
+        "desc": "Elimina odores e aromatiza ambientes domésticos, comerciais e industriais com a fragrância marcante e fresca do Kaiak. Ideal para recepções e banheiros que precisam causar boa impressão.",
+        "img": "campar_img/aromar_kaiak.jpg",
+        "precos": [
+          [
+            "1L",
+            "R$ 42,99",
+            "COD 20398"
+          ]
+        ]
+      },
+      {
+        "nome": "Bamboo",
+        "desc": "Fragrância Bamboo, leve e natural, para ambientes que precisam de frescor e sofisticação. Transforma qualquer espaço com aroma agradável e duradouro.",
+        "img": "campar_img/aromar_bamboo.jpg",
+        "precos": [
+          [
+            "1L",
+            "R$ 42,99",
+            "COD 20333"
+          ]
+        ]
+      },
+      {
+        "nome": "Destak",
+        "desc": "Fragrância Destak com personalidade marcante para quem quer impressionar. Ideal para ambientes comerciais, recepções e espaços onde a primeira impressão importa.",
+        "img": "campar_img/aromar_destak.jpg",
+        "precos": [
+          [
+            "1L",
+            "R$ 51,99",
+            "COD 20397"
+          ]
+        ]
+      },
+      {
+        "nome": "Trousseau",
+        "desc": "em breve - Fragrância marcante para aromatizar ambientes domésticos, comerciais e industriais.",
+        "img": "campar_img/placeholder.svg",
+        "precos": [
+          [
+            "1L",
+            "Consulte",
+            ""
+          ]
+        ],
+        "emBreve": true
+      }
+    ]
   },
   {
     "id": "alcool_gel",
