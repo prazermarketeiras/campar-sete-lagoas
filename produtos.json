@@ -120,44 +120,48 @@
     "img": "campar_img/easy_clean.jpg"
   },
   {
-    "id": "gel_mix_pinho",
+    "id": "gel_mix",
     "cat": "Limpeza Geral",
-    "nome": "Gel Mix Pinho",
+    "nome": "Gel Mix",
     "sub": "Detergente Gel",
-    "desc": "Alto poder de solubilização de óleos, gorduras e graxas com aroma fresco de pinho. Indicado para azulejos, banheiros, pisos e sanitários. Gel de alta viscosidade que adere à superfície e age melhor.",
-    "precos": [
-      [
-        "2L",
-        "Consulte",
-        ""
-      ],
-      [
-        "5L",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/gel_mix_pinho.jpg"
-  },
-  {
-    "id": "gel_mix_lavanda",
-    "cat": "Limpeza Geral",
-    "nome": "Gel Mix Lavanda",
-    "sub": "Detergente Gel",
-    "desc": "Mesma potência do Gel Mix com aroma suave de lavanda. Limpa azulejos, banheiros e sanitários com eficiência, deixando o ambiente com perfume relaxante.",
-    "precos": [
-      [
-        "2L",
-        "R$22,99",
-        ""
-      ],
-      [
-        "5L",
-        "R$45,99",
-        ""
-      ]
-    ],
-    "img": "campar_img/gel_mix_lavanda.jpg"
+    "desc": "Alto poder de solubilização de óleos, gorduras e graxas. Indicado para azulejos, banheiros, pisos e sanitários. Gel de alta viscosidade que adere à superfície e age melhor. Escolha a fragrância ao adicionar ao pedido.",
+    "img": "campar_img/gel_mix_pinho.jpg",
+    "variantes": [
+      {
+        "nome": "Pinho",
+        "desc": "Alto poder de solubilização de óleos, gorduras e graxas com aroma fresco de pinho. Indicado para azulejos, banheiros, pisos e sanitários. Gel de alta viscosidade que adere à superfície e age melhor.",
+        "img": "campar_img/gel_mix_pinho.jpg",
+        "precos": [
+          [
+            "2L",
+            "Consulte",
+            ""
+          ],
+          [
+            "5L",
+            "Consulte",
+            ""
+          ]
+        ]
+      },
+      {
+        "nome": "Lavanda",
+        "desc": "Mesma potência do Gel Mix com aroma suave de lavanda. Limpa azulejos, banheiros e sanitários com eficiência, deixando o ambiente com perfume relaxante.",
+        "img": "campar_img/gel_mix_lavanda.jpg",
+        "precos": [
+          [
+            "2L",
+            "R$22,99",
+            ""
+          ],
+          [
+            "5L",
+            "R$45,99",
+            ""
+          ]
+        ]
+      }
+    ]
   },
   {
     "id": "limpa_telhas",
@@ -1595,7 +1599,7 @@
     "precos": [
       [
         "5L",
-        "Consulte",
+        "R$ 63,00",
         ""
       ]
     ],
@@ -1610,7 +1614,7 @@
     "precos": [
       [
         "5L",
-        "Consulte",
+        "R$ 120,00",
         ""
       ]
     ],
@@ -1720,5 +1724,65 @@
       ]
     ],
     "img": "campar_img/maquina_pressao.jpg"
+  },
+  {
+    "id": "kit1_mensal",
+    "cat": "Kits",
+    "nome": "Kit 1 - Casa Limp Mensal",
+    "sub": "Kit de Limpeza",
+    "desc": "1 Sabão Líquido de Roupas 5L, 1 Amaciante Concentrado 5L, 1 Polimov 500ml, 1 Multicamp 500ml, 1 Detergente Neutro 500ml.",
+    "precos": [
+      [
+        "Kit",
+        "R$ 94,99",
+        ""
+      ]
+    ],
+    "img": "campar_img/kit1_mensal.jpg"
+  },
+  {
+    "id": "kit2_premium",
+    "cat": "Kits",
+    "nome": "Kit 2 - Casa Limp Premium",
+    "sub": "Kit de Limpeza",
+    "desc": "1 Sabão Líquido de Roupas 5L, 1 Amaciante Concentrado 5L, 1 Polimov 500ml, 1 Multicamp 500ml, 1 Detergente Neutro 500ml, 1 Limpador Perfumado 2L, 1 Aromatizador de Ambiente 1L, 1 Alvejante 500g.",
+    "precos": [
+      [
+        "Kit",
+        "R$ 178,99",
+        ""
+      ]
+    ],
+    "img": "campar_img/kit2_premium.jpg"
+  },
+  {
+    "id": "kit3_pet",
+    "cat": "Kits",
+    "nome": "Kit 3 - Casa Limp Pet",
+    "sub": "Kit de Limpeza",
+    "desc": "1 Sabão Líquido de Roupas 5L, 1 Amaciante Concentrado 5L, 1 Polimov 500ml, 1 Multicamp 500ml, 1 Detergente Neutro 500ml, 1 Limpador Perfumado 2L, 1 Neutralizador de Odor 2L.",
+    "precos": [
+      [
+        "Kit",
+        "R$ 126,99",
+        ""
+      ]
+    ],
+    "img": "campar_img/kit3_pet.jpg"
+  },
+  {
+    "id": "kit4_economico",
+    "cat": "Kits",
+    "nome": "Kit 4 - Casa Limp Econômico",
+    "sub": "Kit de Limpeza",
+    "desc": "1 Sabão Líquido de Roupas 5L, 1 Amaciante Concentrado 5L, 1 Detergente Neutro 5L, 1 Multiuso 5L, 1 Limpador Perfumado 5L, 1 Amoniex 5L.",
+    "precos": [
+      [
+        "Kit",
+        "R$ 199,99",
+        ""
+      ]
+    ],
+    "img": "campar_img/kit4_economico.jpg"
   }
 ]
