@@ -81,10 +81,10 @@
   },
   {
     "id": "nullbac",
-    "cat": "Limpeza Geral",
+    "cat": "Especial",
     "nome": "Nullbac",
-    "sub": "Limpador Instantâneo",
-    "desc": "Limpeza imediata antes e depois do uso de equipamentos, bancadas, paredes e pisos. Ação rápida e efeito prolongado — ideal para ambientes de alto tráfego que exigem higiene constante.",
+    "sub": "Limpeza de Academia",
+    "desc": "Limpeza e desinfecção imediata antes e depois do uso de equipamentos, bancadas, paredes e pisos. Ação rápida e efeito prolongado — ideal para ambientes de alto tráfego que exigem higiene constante.Não estraga o estofado do equipamento",
     "precos": [
       [
         "5L",
@@ -561,7 +561,7 @@
         ""
       ]
     ],
-    "img": "campar_img/placeholder.svg"
+    "img": "campar_img/desengraxante_az.jpg"
   },
   {
     "id": "limpi_alum",
@@ -657,7 +657,7 @@
   },
   {
     "id": "cloro_liq",
-    "cat": "Lavanderia",
+    "cat": "Casa",
     "nome": "Cloro Líquido",
     "sub": "Desinfetante Hospitalar",
     "desc": "Indicado para desinfecção hospitalar de superfícies fixas e artigos não críticos. Alta eficiência no controle de micro-organismos em ambientes que exigem higienização rigorosa.",
@@ -682,7 +682,7 @@
   },
   {
     "id": "agua_sanitaria",
-    "cat": "Lavanderia",
+    "cat": "Casa",
     "nome": "Água Sanitária",
     "sub": "Desinfetante e Alvejante",
     "desc": "Produto clássico e indispensável. Desinfeta superfícies e equipamentos e branqueia roupas brancas. Versátil, acessível e de eficiência comprovada para uso doméstico e profissional.",
@@ -807,7 +807,7 @@
   },
   {
     "id": "suape",
-    "cat": "Especial",
+    "cat": "Casa",
     "nome": "SOAP Sabonete Liquido ",
     "sub": "Sabonete Líquido – Dove · Erva-doce · Marine",
     "desc": "Soap especial elaborado para lavar e limpar mãos e braços com qualidade e suavidade. Linha de fragrâncias para toaletes e banheiros. Indicado para clínicas e hospitais.",
@@ -832,7 +832,7 @@
   },
   {
     "id": "alvejar_mais",
-    "cat": "Especial",
+    "cat": "Lavanderia",
     "nome": "Alvejar+ - Alvejante em pó",
     "sub": "Alvejante em Pó",
     "desc": "Alvejante em pó altamente eficaz na remoção de manchas em tecidos brancos e coloridos, para quando a mancha resiste ao sabão e ao amaciante.",
@@ -977,7 +977,7 @@
   },
   {
     "id": "aromar_kaiak",
-    "cat": "Especial",
+    "cat": "Casa",
     "nome": "Aromar Kaiak",
     "sub": "Odorizador de Ambientes",
     "desc": "Elimina odores e aromatiza ambientes domésticos, comerciais e industriais com a fragrância marcante e fresca do Kaiak. Ideal para recepções e banheiros que precisam causar boa impressão.",
@@ -992,7 +992,7 @@
   },
   {
     "id": "aromar_bamboo",
-    "cat": "Especial",
+    "cat": "Casa",
     "nome": "Aromar Bamboo",
     "sub": "Odorizador de Ambientes",
     "desc": "Fragrância Bamboo, leve e natural, para ambientes que precisam de frescor e sofisticação. Transforma qualquer espaço com aroma agradável e duradouro.",
@@ -1007,7 +1007,7 @@
   },
   {
     "id": "aromar_destak",
-    "cat": "Especial",
+    "cat": "Casa",
     "nome": "Aromar Destak",
     "sub": "Odorizador de Ambientes",
     "desc": "Fragrância Destak com personalidade marcante para quem quer impressionar. Ideal para ambientes comerciais, recepções e espaços onde a primeira impressão importa.",
@@ -1022,7 +1022,7 @@
   },
   {
     "id": "aromar_ultrassom",
-    "cat": "Especial",
+    "cat": "Casa",
     "nome": "Aromar trousseau",
     "sub": "Odorizador de Ambientes",
     "desc": "em breve - Fragrância marcante para aromatizar ambientes domésticos, comerciais e industriais.",
@@ -1038,7 +1038,7 @@
   },
   {
     "id": "alcool_gel",
-    "cat": "Especial",
+    "cat": "Casa",
     "nome": "Álcool 70% Gel",
     "sub": "Higienizante de Mãos",
     "desc": "Limpeza e desinfecção das mãos e braços de forma prática e segura. Fórmula gel que não escorre, garante contato prolongado com a pele e elimina micro-organismos com eficiência.",
@@ -1093,10 +1093,35 @@
   },
   {
     "id": "placosol",
+    "cat": "Casa",
+    "nome": "Placosol - Limpeza de Box e Vidro",
+    "sub": "Removedor de Calcário para Box e Vidros",
+    "desc": "Remove calcário, sabão acumulado e resíduos minerais de box, vidros e metais do banheiro sem riscar. Deixa o vidro transparente e brilhante como novo.",
+    "precos": [
+      [
+        "1L",
+        "R$ 19,99",
+        "COD 20511"
+      ],
+      [
+        "2L",
+        "R$ 34,99",
+        "COD 20512"
+      ],
+      [
+        "5L",
+        "R$ 69,99",
+        "COD 20324"
+      ]
+    ],
+    "img": "campar_img/placosol.jpg"
+  },
+  {
+    "id": "placosol_solar",
     "cat": "Especial",
-    "nome": "Placosol - Limpeza de placa solar",
+    "nome": "Placosol - Limpeza de Placa Solar",
     "sub": "Limpador para Placas e Aquecedores Solares",
-    "desc": "Remove sujeira encrostada, resíduos minerais e depósitos em placas e aquecedores solares sem danificar. Mantém o sistema funcionando com máxima eficiência. Limpeza de placa solar e tira calcário de box e vidro",
+    "desc": "Remove sujeira encrostada, resíduos minerais e depósitos em placas e aquecedores solares sem danificar. Mantém o sistema funcionando com máxima eficiência.",
     "precos": [
       [
         "1L",
@@ -1560,5 +1585,35 @@
       ]
     ],
     "img": "campar_img/borrifador.jpg"
+  },
+  {
+    "id": "czi_701",
+    "cat": "Casa",
+    "nome": "CZI 701",
+    "sub": "Detergente Lava Louças para Máquinas Automáticas",
+    "desc": "Detergente de uso industrial para máquinas de lavar louça automáticas. Remove gordura e resíduos com eficiência, sem deixar manchas ou resíduos nas peças.",
+    "precos": [
+      [
+        "5L",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/czi_701.jpg"
+  },
+  {
+    "id": "czi_703",
+    "cat": "Casa",
+    "nome": "CZI 703",
+    "sub": "Secante Abrilhantador para Máquinas de Lavar Louça",
+    "desc": "Secante abrilhantador de uso industrial para máquinas de lavar louça automáticas. Evita manchas de água e acelera a secagem, deixando louças e utensílios com brilho.",
+    "precos": [
+      [
+        "5L",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/czi_703.jpg"
   }
 ]
