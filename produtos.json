@@ -1866,5 +1866,53 @@
     ],
     "img": "campar_img/kit4_economico.jpg",
     "codigo": ""
+  },
+  {
+    "id": "esponja_magica",
+    "cat": "Casa",
+    "nome": "Esponja Mágica",
+    "sub": "Esponja de Limpeza Multiuso",
+    "desc": "Remove manchas e sujeiras pesadas usando apenas água, sem produtos químicos. Ideal para paredes, rodapés, eletrodomésticos e superfícies delicadas. Vem com 3 esponjas.",
+    "precos": [
+      [
+        "Pacote c/ 3",
+        "R$ 19,99",
+        ""
+      ]
+    ],
+    "img": "campar_img/esponja_magica.jpg",
+    "codigo": "18470"
+  },
+  {
+    "id": "caneta_magica",
+    "cat": "Casa",
+    "nome": "Caneta Mágica",
+    "sub": "Caneta Pluma Limpante",
+    "desc": "Remove manchas de tecidos de forma prática e rápida, sem esfregar. Ideal para levar na bolsa e usar em qualquer lugar.",
+    "precos": [
+      [
+        "10ml",
+        "R$ 34,99",
+        ""
+      ]
+    ],
+    "img": "campar_img/caneta_magica.jpg",
+    "codigo": "20014"
+  },
+  {
+    "id": "odorizador_ambientes",
+    "cat": "Casa",
+    "nome": "Odorizador de Ambientes",
+    "sub": "Aerossol Perfumado",
+    "desc": "Perfuma e refresca o ambiente com fragrância de longa duração. Neutraliza odores e deixa o espaço com cheiro agradável.",
+    "precos": [
+      [
+        "400mL",
+        "R$ 14,99",
+        ""
+      ]
+    ],
+    "img": "campar_img/odorizador_ambientes.jpg",
+    "codigo": "20913"
   }
 ]
