@@ -1615,5 +1615,110 @@
       ]
     ],
     "img": "campar_img/czi_703.jpg"
+  },
+  {
+    "id": "escova_enceradeira",
+    "cat": "Equipamentos",
+    "nome": "Escova pra Enceradeira",
+    "sub": "Equipamento de Limpeza",
+    "desc": "Disco de escova para enceradeira, usado na lavagem e polimento de pisos.",
+    "precos": [
+      [
+        "Unidade",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/escova_enceradeira.jpg"
+  },
+  {
+    "id": "rastelo",
+    "cat": "Equipamentos",
+    "nome": "Rastelo",
+    "sub": "Equipamento de Limpeza",
+    "desc": "Rastelo para limpeza de áreas externas, jardins e varrição pesada.",
+    "precos": [
+      [
+        "Unidade",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/rastelo.jpg"
+  },
+  {
+    "id": "rodo_aluminio",
+    "cat": "Equipamentos",
+    "nome": "Rodo de Alumínio",
+    "sub": "Equipamento de Limpeza",
+    "desc": "Rodo com cabo de alumínio para limpeza e secagem de pisos, mais leve e resistente.",
+    "precos": [
+      [
+        "Unidade",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/rodo_aluminio.jpg"
+  },
+  {
+    "id": "enceradeira_aluguel",
+    "cat": "Aluguel",
+    "nome": "Enceradeira",
+    "sub": "Aluguel de Equipamento",
+    "desc": "Enceradeira industrial para lavagem, polimento e brilho de pisos.",
+    "precos": [
+      [
+        "Diária",
+        "R$ 50,00",
+        ""
+      ]
+    ],
+    "img": "campar_img/enceradeira_aluguel.jpg"
+  },
+  {
+    "id": "maquina_extratora",
+    "cat": "Aluguel",
+    "nome": "Máquina Extratora",
+    "sub": "Limpeza de Estofados, Tapetes, Colchões, Bancos Automotivos e Carpetes",
+    "desc": "Máquina extratora profissional para limpeza profunda de estofados, tapetes, colchões, bancos automotivos e carpetes.",
+    "precos": [
+      [
+        "Diária",
+        "R$ 200,00",
+        ""
+      ]
+    ],
+    "img": "campar_img/maquina_extratora.jpg"
+  },
+  {
+    "id": "aspirador_po_agua",
+    "cat": "Aluguel",
+    "nome": "Aspirador de Pó e Água",
+    "sub": "Aluguel de Equipamento",
+    "desc": "Aspirador industrial para pó e água, ideal para limpeza pesada em obras, oficinas e ambientes comerciais.",
+    "precos": [
+      [
+        "Diária",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/aspirador_po_agua.jpg"
+  },
+  {
+    "id": "maquina_pressao",
+    "cat": "Aluguel",
+    "nome": "Máquina de Pressão",
+    "sub": "Karcher",
+    "desc": "Lavadora de alta pressão Karcher para limpeza pesada de pisos, fachadas, veículos e áreas externas.",
+    "precos": [
+      [
+        "Diária",
+        "Consulte",
+        ""
+      ]
+    ],
+    "img": "campar_img/maquina_pressao.jpg"
   }
 ]
