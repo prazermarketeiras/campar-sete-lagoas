@@ -34,14 +34,15 @@
   .header-title{flex:1;text-align:center}
   .header-title h1{font-size:1.05rem;font-weight:700;color:#fff;line-height:1.2}
   .header-title p{font-size:.72rem;color:#9CC4E4;margin-top:1px}
-  .cart-btn{
+  .cart-btn,.menu-btn{
     position:relative;background:var(--ciano);border:none;color:#fff;
     border-radius:50%;width:44px;height:44px;font-size:1.2rem;
     cursor:pointer;display:flex;align-items:center;justify-content:center;
     box-shadow:0 2px 8px rgba(0,180,216,.4);flex-shrink:0;
     transition:transform .15s;
   }
-  .cart-btn:active{transform:scale(.92)}
+  .cart-btn:active,.menu-btn:active{transform:scale(.92)}
+  .menu-btn{background:rgba(255,255,255,.15);box-shadow:none;border:1.5px solid rgba(255,255,255,.25)}
   .cart-badge{
     position:absolute;top:-4px;right:-4px;background:#FF3B3B;
     color:#fff;border-radius:50%;width:20px;height:20px;
@@ -264,12 +265,37 @@
   .wa-btn:active{transform:scale(.97);opacity:.92}
   .wa-icon{width:26px;height:26px}
 
+  /* ── MENU DE CATEGORIAS ── */
+  .menu-overlay{
+    display:none;position:fixed;inset:0;background:rgba(5,15,50,.6);
+    z-index:300;backdrop-filter:blur(3px);align-items:flex-end;justify-content:center;
+  }
+  .menu-overlay.open{display:flex}
+  .menu-panel{
+    background:#fff;border-radius:22px 22px 0 0;width:100%;max-width:520px;
+    max-height:85vh;overflow-y:auto;padding:0 0 24px;
+    animation:slideUp .3s ease;
+  }
+  .menu-header{
+    position:sticky;top:0;background:#fff;padding:16px 20px 12px;
+    border-bottom:1px solid #EEF2FF;display:flex;align-items:center;justify-content:space-between;z-index:10;
+  }
+  .menu-header h2{font-size:1.05rem;font-weight:700;color:var(--az)}
+  .menu-list{padding:10px 16px}
+  .menu-item{
+    display:block;width:100%;text-align:left;background:none;border:none;
+    border-bottom:1px solid #EEF2FF;padding:14px 6px;font-size:.92rem;font-weight:600;
+    color:var(--texto);cursor:pointer;
+  }
+  .menu-item.ativo{color:var(--ciano2);font-weight:700}
+  .menu-item:active{background:#F0F5FF}
+
   /* ── TOAST ── */
   .toast{
     position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);
     background:var(--az);color:#fff;padding:10px 22px;border-radius:24px;
     font-size:.82rem;font-weight:600;opacity:0;transition:all .3s;z-index:500;
-    white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.2);
+    white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.2);pointer-events:none;
   }
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
@@ -358,6 +384,7 @@
 
 <header>
   <div class="header-top">
+    <button class="menu-btn" onclick="abrirMenu()" aria-label="Menu de categorias">☰</button>
     <div class="logo-wrap"><img src="campar_img/logo.png" alt="Campar Química"></div>
     <div class="header-title">
       <h1>Campar Química</h1>
@@ -436,6 +463,17 @@
       <button class="modal-close" onclick="fecharCarrinho()">✕</button>
     </div>
     <div id="cartContent"></div>
+  </div>
+</div>
+
+<!-- MENU DE CATEGORIAS -->
+<div class="menu-overlay" id="menuOverlay" onclick="fecharMenuEv(event)">
+  <div class="menu-panel">
+    <div class="menu-header">
+      <h2>☰ Categorias</h2>
+      <button class="modal-close" onclick="fecharMenu()">✕</button>
+    </div>
+    <div class="menu-list" id="menuList"></div>
   </div>
 </div>
 
@@ -994,6 +1032,30 @@ function fecharCarrinho() {
 }
 function fecharCarrinhoEv(e) {
   if (e.target === document.getElementById('cartOverlay')) fecharCarrinho();
+}
+
+// ── MENU DE CATEGORIAS ─────────────────────────────────────────
+function abrirMenu() {
+  const list = document.getElementById('menuList');
+  const pills = document.querySelectorAll('.cat-pill');
+  list.innerHTML = Array.from(pills).map(p => `
+    <button class="menu-item ${p.classList.contains('ativo') ? 'ativo' : ''}" onclick="selecionarCategoriaMenu('${p.dataset.cat}')">${p.innerHTML}</button>
+  `).join('');
+  document.getElementById('menuOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function fecharMenu() {
+  document.getElementById('menuOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function fecharMenuEv(e) {
+  if (e.target === document.getElementById('menuOverlay')) fecharMenu();
+}
+function selecionarCategoriaMenu(cat) {
+  const pill = document.querySelector(`.cat-pill[data-cat="${cat}"]`);
+  if (pill) filtrarCat(pill, cat);
+  fecharMenu();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderCarrinho() {
