@@ -295,190 +295,117 @@
     "img": "campar_img/pasta_brilho.jpg"
   },
   {
-    "id": "campdesin_eucalipto",
+    "id": "limpador_perfumado",
     "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado  Eucalipto",
-    "sub": "Desinfetante Profissional",
-    "desc": "Desinfetante de uso geral com aroma fresco de eucalipto. Limpa, desinfeta e perfuma ambientes domésticos, comerciais e industriais. Ação bactericida com fragrância que refresca qualquer espaço.",
-    "precos": [
-      [
-        "2L",
-        "R$ 14,99",
-        "COD 20340"
-      ],
-      [
-        "5L",
-        "R$ 27,99",
-        "COD 20433"
-      ]
-    ],
-    "img": "campar_img/campdesin_eucalipto.jpg"
-  },
-  {
-    "id": "campdesin_lavanda",
-    "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado  Lavanda",
-    "sub": "Desinfetante Profissional",
-    "desc": "Desinfetante com aroma suave de lavanda. Combina eficiência bactericida real com fragrância que transforma a sensação do ambiente. Ideal para banheiros, quartos e áreas de circulação.",
-    "precos": [
-      [
-        "2L",
-        "R$ 14,99",
-        "COD 20284"
-      ],
-      [
-        "5L",
-        "R$27,99",
-        ""
-      ]
-    ],
-    "img": "campar_img/campdesin_lavanda.jpg"
-  },
-  {
-    "id": "campdesin_floral",
-    "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado  Floral",
-    "sub": "Desinfetante Profissional",
-    "desc": "Desinfetante com aroma floral delicado. Limpeza e desinfecção eficientes com o perfume que deixa qualquer ambiente com cara de limpo e cheiro de fresco.",
-    "precos": [
-      [
-        "2L",
-        "R$14,99",
-        ""
-      ],
-      [
-        "5L",
-        "R$27,99",
-        ""
-      ]
-    ],
-    "img": "campar_img/campdesin_floral.jpg"
-  },
-  {
-    "id": "limpador_orvalho",
-    "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado Orvalho",
-    "sub": "Limpador de Pisos e Superfícies",
-    "desc": "Fórmula equilibrada para limpeza eficiente de pisos, bancadas e paredes com a fragrância suave e fresca de orvalho. Limpa sem agredir e deixa o ambiente com aroma agradável por mais tempo.",
-    "precos": [
-      [
-        "2L",
-        "R$ 14,99",
-        "COD 20338"
-      ],
-      [
-        "5L",
-        "R$ 27,99",
-        "COD 20434"
-      ]
-    ],
-    "img": "campar_img/limpador_orvalho.jpg"
-  },
-  {
-    "id": "limpador_talco",
-    "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado Talco",
-    "sub": "Limpador de Pisos e Superfícies",
-    "desc": "Limpeza eficiente com a fragrância clássica, suave e aconchegante de talco. Muito usado em ambientes residenciais e comerciais que buscam limpeza real com perfume que agrada a todos.",
-    "precos": [
-      [
-        "2L",
-        "R$ 14,99",
-        "COD 20337"
-      ],
-      [
-        "5L",
-        "R$ 27,99",
-        ""
-      ]
-    ],
-    "img": "campar_img/limpador_talco.jpg"
-  },
-  {
-    "id": "limpador_perfumado_eucalipto",
-    "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado Eucalipto",
-    "sub": "Limpador de Pisos e Superfícies",
-    "desc": "Fórmula equilibrada para limpeza eficiente de pisos, bancadas e paredes com a fragrância fresca e revigorante de eucalipto. Limpa sem agredir e deixa o ambiente com aroma agradável por mais tempo.",
-    "precos": [
-      [
-        "2L",
-        "R$ 14,99",
-        ""
-      ],
-      [
-        "5L",
-        "R$ 27,99",
-        ""
-      ]
-    ],
-    "img": "campar_img/limpador_perfumado_eucalipto.jpg"
-  },
-  {
-    "id": "limpador_perfumado_lavanda",
-    "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado Lavanda - ",
-    "sub": "Limpador de Pisos e Superfícies",
-    "desc": "é o mesmo de campdesin",
-    "precos": [
-      [
-        "2L",
-        "R$ 14,99",
-        ""
-      ],
-      [
-        "5L",
-        "R$ 27,99",
-        ""
-      ],
-      [
-        "20L",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/limpador_perfumado_lavanda.jpg"
-  },
-  {
-    "id": "limpador_perfumado_floral",
-    "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado Floral",
-    "sub": "Limpador de Pisos e Superfícies",
-    "desc": "Fórmula equilibrada para limpeza eficiente de pisos, bancadas e paredes com fragrância floral delicada. Limpa sem agredir e deixa o ambiente com aroma agradável por mais tempo.",
-    "precos": [
-      [
-        "2L",
-        "R$ 14,99",
-        ""
-      ],
-      [
-        "5L",
-        "R$ 27,99",
-        ""
-      ]
-    ],
-    "img": "campar_img/limpador_perfumado_floral.jpg"
-  },
-  {
-    "id": "limpador_perfumado_destaque",
-    "cat": "Limpeza Geral",
-    "nome": "Limpador Perfumado Destaque",
-    "sub": "Limpador de Pisos e Superfícies",
-    "desc": "Em breve: nova fragrância Destaque chegando à linha de limpadores perfumados. Aguardando liberação da fábrica.",
-    "precos": [
-      [
-        "2L",
-        "Consulte",
-        ""
-      ],
-      [
-        "5l",
-        "Consulte",
-        ""
-      ]
-    ],
-    "img": "campar_img/placeholder.svg",
-    "emBreve": true
+    "nome": "Limpador Perfumado",
+    "sub": "Desinfetante e Limpador Multiuso",
+    "desc": "Limpa, desinfeta e perfuma pisos, bancadas e superfícies em geral. Escolha a fragrância ao adicionar ao pedido.",
+    "img": "campar_img/campdesin_eucalipto.jpg",
+    "variantes": [
+      {
+        "nome": "Eucalipto",
+        "desc": "Desinfetante de uso geral com aroma fresco de eucalipto. Limpa, desinfeta e perfuma ambientes domésticos, comerciais e industriais. Ação bactericida com fragrância que refresca qualquer espaço.",
+        "img": "campar_img/campdesin_eucalipto.jpg",
+        "precos": [
+          [
+            "2L",
+            "R$ 14,99",
+            "COD 20340"
+          ],
+          [
+            "5L",
+            "R$ 27,99",
+            "COD 20433"
+          ]
+        ]
+      },
+      {
+        "nome": "Lavanda",
+        "desc": "Desinfetante com aroma suave de lavanda. Combina eficiência bactericida real com fragrância que transforma a sensação do ambiente. Ideal para banheiros, quartos e áreas de circulação.",
+        "img": "campar_img/campdesin_lavanda.jpg",
+        "precos": [
+          [
+            "2L",
+            "R$ 14,99",
+            "COD 20284"
+          ],
+          [
+            "5L",
+            "R$27,99",
+            ""
+          ]
+        ]
+      },
+      {
+        "nome": "Floral",
+        "desc": "Desinfetante com aroma floral delicado. Limpeza e desinfecção eficientes com o perfume que deixa qualquer ambiente com cara de limpo e cheiro de fresco.",
+        "img": "campar_img/campdesin_floral.jpg",
+        "precos": [
+          [
+            "2L",
+            "R$14,99",
+            ""
+          ],
+          [
+            "5L",
+            "R$27,99",
+            ""
+          ]
+        ]
+      },
+      {
+        "nome": "Orvalho",
+        "desc": "Fórmula equilibrada para limpeza eficiente de pisos, bancadas e paredes com a fragrância suave e fresca de orvalho. Limpa sem agredir e deixa o ambiente com aroma agradável por mais tempo.",
+        "img": "campar_img/limpador_orvalho.jpg",
+        "precos": [
+          [
+            "2L",
+            "R$ 14,99",
+            "COD 20338"
+          ],
+          [
+            "5L",
+            "R$ 27,99",
+            "COD 20434"
+          ]
+        ]
+      },
+      {
+        "nome": "Talco",
+        "desc": "Limpeza eficiente com a fragrância clássica, suave e aconchegante de talco. Muito usado em ambientes residenciais e comerciais que buscam limpeza real com perfume que agrada a todos.",
+        "img": "campar_img/limpador_talco.jpg",
+        "precos": [
+          [
+            "2L",
+            "R$ 14,99",
+            "COD 20337"
+          ],
+          [
+            "5L",
+            "R$ 27,99",
+            ""
+          ]
+        ]
+      },
+      {
+        "nome": "Destaque",
+        "desc": "Em breve: nova fragrância Destaque chegando à linha de limpadores perfumados. Aguardando liberação da fábrica.",
+        "img": "campar_img/placeholder.svg",
+        "precos": [
+          [
+            "2L",
+            "Consulte",
+            ""
+          ],
+          [
+            "5l",
+            "Consulte",
+            ""
+          ]
+        ],
+        "emBreve": true
+      }
+    ]
   },
   {
     "id": "bio_brilho_liq",

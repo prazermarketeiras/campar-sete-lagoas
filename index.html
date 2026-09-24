@@ -171,6 +171,13 @@
   .modal-img img{max-height:min(320px,40vh);max-width:100%;object-fit:contain;filter:drop-shadow(0 6px 16px rgba(0,0,0,.15))}
   .modal-body{padding:0 20px}
   .modal-nome{font-size:1.15rem;font-weight:700;color:var(--az);margin-bottom:4px;margin-top:16px}
+  .modal-fragrancias{display:none;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+  .frag-pill{
+    background:#EEF4FF;color:var(--az);border:1.5px solid var(--borda);
+    border-radius:20px;padding:5px 12px;font-size:.78rem;font-weight:600;
+    cursor:pointer;transition:all .2s;
+  }
+  .frag-pill.ativo{background:var(--ciano);border-color:var(--ciano);color:#fff}
   .modal-sub{font-size:.82rem;color:var(--ciano2);font-style:italic;margin-bottom:12px}
   .modal-desc{font-size:.87rem;color:#333;line-height:1.6;margin-bottom:16px}
   .modal-precos{background:#F0F5FF;border-radius:12px;padding:14px;margin-bottom:16px}
@@ -269,6 +276,25 @@
   /* ── VAZIO ── */
   .no-results{text-align:center;padding:60px 20px;color:#aaa;font-size:.9rem;grid-column:1/-1}
 
+  /* ── RODAPÉ ── */
+  .site-footer{
+    background:linear-gradient(135deg,var(--az) 0%,var(--az2) 100%);
+    padding:28px 20px 90px;text-align:center;color:#fff;
+  }
+  .footer-logo img{height:44px;object-fit:contain;margin-bottom:16px;border-radius:8px}
+  .footer-info{
+    display:flex;flex-direction:column;gap:12px;align-items:center;
+    max-width:420px;margin:0 auto;
+  }
+  .footer-item{
+    display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none;
+    font-size:.85rem;opacity:.92;transition:opacity .2s;
+  }
+  .footer-item:hover{opacity:1;text-decoration:underline}
+  .footer-item em{font-style:italic;opacity:.8}
+  .footer-icon{font-size:1rem;flex-shrink:0}
+  .footer-copy{margin-top:20px;font-size:.72rem;color:#9CC4E4}
+
   /* ── WHATSAPP FLUTUANTE ── */
   .wa-fab{
     position:fixed;right:16px;bottom:16px;z-index:150;
@@ -343,7 +369,7 @@
     </button>
   </div>
   <div class="cats-bar" id="catsBar">
-    <button class="cat-pill ativo" data-cat="Todos" onclick="filtrarCat(this,'Todos')">Todos</button>
+    <button class="cat-pill ativo" data-cat="Favoritos" onclick="filtrarCat(this,'Favoritos')">⭐ Favoritos</button>
     <button class="cat-pill" data-cat="Limpeza Geral" onclick="filtrarCat(this,'Limpeza Geral')">🧹 Limpeza Geral</button>
     <button class="cat-pill" data-cat="Automotivo" onclick="filtrarCat(this,'Automotivo')">🚗 Automotivo</button>
     <button class="cat-pill" data-cat="Lavanderia" onclick="filtrarCat(this,'Lavanderia')">👕 Lavanderia</button>
@@ -360,6 +386,25 @@
 
 <div class="grid" id="grid"></div>
 
+<footer class="site-footer">
+  <div class="footer-logo"><img src="campar_img/logo.png" alt="Campar Química"></div>
+  <div class="footer-info">
+    <a class="footer-item" href="https://www.google.com/maps/search/?api=1&query=R.+Luiz+Privat,+46+-+Centro,+Sete+Lagoas+-+MG" target="_blank" rel="noopener">
+      <span class="footer-icon">📍</span>
+      <span>R. Luiz Privat, 46 - Centro, Sete Lagoas - MG <em>(em frente ao INSS)</em></span>
+    </a>
+    <a class="footer-item" href="tel:+553133718887">
+      <span class="footer-icon">☎️</span>
+      <span>(31) 3371-8887</span>
+    </a>
+    <a class="footer-item" href="https://www.instagram.com/camparsetelagoas" target="_blank" rel="noopener">
+      <span class="footer-icon">📷</span>
+      <span>@camparsetelagoas</span>
+    </a>
+  </div>
+  <div class="footer-copy">Campar Química · Sete Lagoas, MG</div>
+</footer>
+
 <!-- MODAL PRODUTO -->
 <div class="overlay" id="modalOverlay" onclick="fecharModal(event)">
   <div class="modal" id="modal">
@@ -370,6 +415,7 @@
     <div class="modal-img"><img id="modalImg" src="" alt=""></div>
     <div class="modal-body">
       <div class="modal-nome" id="modalNome"></div>
+      <div class="modal-fragrancias" id="modalFragrancias"></div>
       <div class="modal-sub" id="modalSub"></div>
       <div class="modal-desc" id="modalDesc"></div>
       <div class="modal-precos">
@@ -523,6 +569,45 @@ function adicionarTier(id) {
   render();
 }
 
+function editarCampoVariante(id, vi, campo, valor) {
+  const p = PRODUTOS.find(x => x.id === id);
+  if (!p) return;
+  p.variantes[vi][campo] = valor;
+  salvarRascunho();
+}
+
+function toggleAtivoVariante(id, vi) {
+  const p = PRODUTOS.find(x => x.id === id);
+  if (!p) return;
+  p.variantes[vi].emBreve = !p.variantes[vi].emBreve;
+  salvarRascunho();
+  render();
+}
+
+function editarPrecoVariante(id, vi, idx, campo, valor) {
+  const p = PRODUTOS.find(x => x.id === id);
+  if (!p) return;
+  p.variantes[vi].precos[idx][campo] = valor;
+  salvarRascunho();
+}
+
+function removerTierVariante(id, vi, idx) {
+  const p = PRODUTOS.find(x => x.id === id);
+  if (!p) return;
+  if (p.variantes[vi].precos.length <= 1) { alert('É preciso manter ao menos um tamanho.'); return; }
+  p.variantes[vi].precos.splice(idx, 1);
+  salvarRascunho();
+  render();
+}
+
+function adicionarTierVariante(id, vi) {
+  const p = PRODUTOS.find(x => x.id === id);
+  if (!p) return;
+  p.variantes[vi].precos.push(["Novo tamanho", "Consulte", ""]);
+  salvarRascunho();
+  render();
+}
+
 function descartarAlteracoes() {
   if (!confirm('Descartar todas as alterações não publicadas?')) return;
   PRODUTOS = JSON.parse(JSON.stringify(produtosOriginal));
@@ -574,9 +659,14 @@ async function publicarAlteracoes() {
   }
 }
 
-let catAtiva = "Todos";
+let catAtiva = "Favoritos";
 let carrinho = JSON.parse(localStorage.getItem('campar_carrinho') || '[]');
 let modalQtd = {};
+let modalProduto = null;
+let modalVariantes = null;
+let modalVarianteIdx = 0;
+
+const FAVORITOS = ["amoniex","alvejar_mais","campedra","limpador_perfumado","placosol","camplimp","amaciante","campmax","polimov","multicamp"];
 
 function salvarCarrinho() {
   localStorage.setItem('campar_carrinho', JSON.stringify(carrinho));
@@ -598,6 +688,7 @@ function escAttr(s) {
 }
 
 function renderCardEdicao(p) {
+  if (p.variantes) return renderCardEdicaoVariantes(p);
   return `
   <div class="card editando">
     <div class="card-img">
@@ -625,18 +716,56 @@ function renderCardEdicao(p) {
   </div>`;
 }
 
+function renderCardEdicaoVariantes(p) {
+  return `
+  <div class="card editando">
+    <div class="card-img">
+      <span class="cat-tag">${p.cat}</span>
+      <img src="${p.img}" alt="${escAttr(p.nome)}" loading="lazy">
+    </div>
+    <div class="card-body">
+      <div class="edit-field-label">Nome do produto (base)</div>
+      <input class="edit-input" value="${escAttr(p.nome)}" oninput="editarCampo('${p.id}','nome',this.value)">
+      <div class="edit-field-label">Descrição geral</div>
+      <textarea class="edit-textarea" oninput="editarCampo('${p.id}','desc',this.value)">${escAttr(p.desc)}</textarea>
+      <div class="edit-field-label" style="margin-top:10px">Fragrâncias</div>
+      ${p.variantes.map((v,vi) => `
+      <div style="border:1.5px solid var(--borda);border-radius:8px;padding:8px;margin:8px 0">
+        <button class="edit-toggle-ativo ${v.emBreve ? 'inativo' : ''}" onclick="toggleAtivoVariante('${p.id}',${vi})">
+          ${v.emBreve ? '🔜 Inativo (em breve) — toque para ativar' : '✅ Ativo — toque para deixar em breve'}
+        </button>
+        <div class="edit-field-label">Fragrância</div>
+        <input class="edit-input" value="${escAttr(v.nome)}" oninput="editarCampoVariante('${p.id}',${vi},'nome',this.value)">
+        <div class="edit-field-label">Descrição</div>
+        <textarea class="edit-textarea" oninput="editarCampoVariante('${p.id}',${vi},'desc',this.value)">${escAttr(v.desc)}</textarea>
+        <div class="edit-field-label">Tamanhos e preços</div>
+        ${v.precos.map((pr,pi) => `
+        <div class="edit-tier-row">
+          <input class="edit-tam" value="${escAttr(pr[0])}" placeholder="Tamanho" oninput="editarPrecoVariante('${p.id}',${vi},${pi},0,this.value)">
+          <input value="${escAttr(pr[1])}" placeholder="Preço" oninput="editarPrecoVariante('${p.id}',${vi},${pi},1,this.value)">
+          <button class="edit-remove-tier" onclick="removerTierVariante('${p.id}',${vi},${pi})" aria-label="Remover tamanho">✕</button>
+        </div>`).join('')}
+        <button class="edit-add-tier" onclick="adicionarTierVariante('${p.id}',${vi})">+ Adicionar tamanho</button>
+      </div>`).join('')}
+    </div>
+  </div>`;
+}
+
 function render() {
   const busca = document.getElementById('busca').value.toLowerCase().trim();
   const grid = document.getElementById('grid');
   
   const filtrados = PRODUTOS.filter(p => {
-    const matchCat = catAtiva === "Todos" || p.cat === catAtiva;
+    const matchCat = catAtiva === "Favoritos" ? FAVORITOS.includes(p.id) : p.cat === catAtiva;
     const matchBusca = !busca ||
       p.nome.toLowerCase().includes(busca) ||
       p.sub.toLowerCase().includes(busca) ||
       p.desc.toLowerCase().includes(busca);
     return matchCat && matchBusca;
-  }).sort((a, b) => (a.emBreve ? 1 : 0) - (b.emBreve ? 1 : 0));
+  }).sort((a, b) => {
+    if (catAtiva === "Favoritos") return FAVORITOS.indexOf(a.id) - FAVORITOS.indexOf(b.id);
+    return (a.emBreve ? 1 : 0) - (b.emBreve ? 1 : 0);
+  });
 
   if (!filtrados.length) {
     grid.innerHTML = '<div class="no-results">Nenhum produto encontrado 🔍</div>';
@@ -645,21 +774,24 @@ function render() {
 
   grid.innerHTML = filtrados.map(p => {
     if (modoEdicao) return renderCardEdicao(p);
-    const preco = p.precos[0];
+    const variantePrincipal = p.variantes ? (p.variantes.find(v => !v.emBreve) || p.variantes[0]) : null;
+    const precosCard = variantePrincipal ? variantePrincipal.precos : p.precos;
+    const imgCard = variantePrincipal ? (variantePrincipal.img || p.img) : p.img;
+    const preco = precosCard[0];
     const isConsulte = preco[1] === "Consulte";
     return `
     <div class="card" onclick="abrirModal('${p.id}')">
       <div class="card-img">
         <span class="cat-tag">${p.cat}</span>
         ${p.emBreve ? `<span class="em-breve-tag">Em breve</span>` : ''}
-        <img src="${p.img}" alt="${p.nome}" loading="lazy">
+        <img src="${imgCard}" alt="${p.nome}" loading="lazy">
       </div>
       <div class="card-body">
         <div class="card-nome">${p.nome}</div>
         <div class="card-sub">${p.sub}</div>
         <div class="card-desc">${p.desc}</div>
         <div class="card-precos">
-          ${p.precos.slice(0,2).map(pr => `
+          ${precosCard.slice(0,2).map(pr => `
           <div class="preco-item">
             <span class="preco-tam">${pr[0]}</span>
             <div style="text-align:right">
@@ -668,11 +800,13 @@ function render() {
             </div>
           </div>`).join('')}
         </div>
-        ${p.emBreve
-          ? `<button class="add-btn em-breve" onclick="event.stopPropagation()">🔜 Em breve</button>`
-          : `<button class="add-btn ${isConsulte ? 'consulte' : ''}" onclick="addRapido(event,'${p.id}')">
-              ${isConsulte ? '💬 Solicitar orçamento' : '＋ Adicionar ao pedido'}
-            </button>`}
+        ${p.variantes
+          ? `<button class="add-btn" onclick="event.stopPropagation();abrirModal('${p.id}')">🌸 Escolher fragrância</button>`
+          : p.emBreve
+            ? `<button class="add-btn em-breve" onclick="event.stopPropagation()">🔜 Em breve</button>`
+            : `<button class="add-btn ${isConsulte ? 'consulte' : ''}" onclick="addRapido(event,'${p.id}')">
+                ${isConsulte ? '💬 Solicitar orçamento' : '＋ Adicionar ao pedido'}
+              </button>`}
       </div>
     </div>`;
   }).join('');
@@ -691,24 +825,64 @@ function filtrar() { render(); }
 function abrirModal(id) {
   const p = PRODUTOS.find(x => x.id === id);
   if (!p) return;
+  modalProduto = p;
+  modalVariantes = p.variantes || null;
+  modalVarianteIdx = 0;
+  if (modalVariantes) {
+    const idx = modalVariantes.findIndex(v => !v.emBreve);
+    modalVarianteIdx = idx >= 0 ? idx : 0;
+  }
+
   document.getElementById('modalCat').textContent = p.cat;
-  document.getElementById('modalImg').src = p.img;
-  document.getElementById('modalImg').alt = p.nome;
   document.getElementById('modalNome').textContent = p.nome;
-  document.getElementById('modalSub').textContent = p.sub;
-  document.getElementById('modalDesc').textContent = p.desc;
-  
+
+  renderFragranciaBar();
+  atualizarModalConteudo();
+
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function renderFragranciaBar() {
+  const el = document.getElementById('modalFragrancias');
+  if (!modalVariantes) { el.innerHTML = ''; el.style.display = 'none'; return; }
+  el.style.display = 'flex';
+  el.innerHTML = modalVariantes.map((v,i) => `
+    <button class="frag-pill ${i === modalVarianteIdx ? 'ativo' : ''}" onclick="selecionarVariante(${i})">
+      ${v.nome}${v.emBreve ? ' 🔜' : ''}
+    </button>`).join('');
+}
+
+function selecionarVariante(i) {
+  modalVarianteIdx = i;
+  renderFragranciaBar();
+  atualizarModalConteudo();
+}
+
+function atualizarModalConteudo() {
+  const p = modalProduto;
+  const v = modalVariantes ? modalVariantes[modalVarianteIdx] : null;
+  const img = v ? (v.img || p.img) : p.img;
+  const desc = v ? v.desc : p.desc;
+  const precos = v ? v.precos : p.precos;
+  const emBreve = v ? !!v.emBreve : !!p.emBreve;
+  const subLabel = v ? `${p.sub} — ${v.nome}` : p.sub;
+
+  document.getElementById('modalImg').src = img;
+  document.getElementById('modalImg').alt = p.nome;
+  document.getElementById('modalSub').textContent = subLabel;
+  document.getElementById('modalDesc').textContent = desc;
+
   modalQtd = {};
   const pc = document.getElementById('modalPrecos');
-  if (p.emBreve) {
+  if (emBreve) {
     pc.innerHTML = `<div style="text-align:center;color:#999;font-size:.85rem;padding:8px 0">🔜 Produto em breve — ainda não disponível para pedido.</div>`;
-    document.getElementById('modalOverlay').classList.add('open');
-    document.body.style.overflow = 'hidden';
     return;
   }
-  pc.innerHTML = p.precos.map((pr,i) => {
+  pc.innerHTML = precos.map((pr,i) => {
     modalQtd[i] = 1;
     const isConsulte = pr[1] === "Consulte";
+    const varArg = modalVariantes ? modalVarianteIdx : 'null';
     return `
     <div class="modal-preco-row">
       <div class="mp-top">
@@ -724,15 +898,12 @@ function abrirModal(id) {
           <span class="qty-val" id="modalQtdVal${i}">1</span>
           <button class="qty-btn" onclick="alterarModalQtd(${i},1)">+</button>
         </div>
-        <button class="mp-add ${isConsulte ? 'consulte' : ''}" onclick="addCarrinho('${id}',${i},modalQtd[${i}]);fecharModalBtn()">
+        <button class="mp-add ${isConsulte ? 'consulte' : ''}" onclick="addCarrinho('${p.id}',${i},modalQtd[${i}],${varArg});fecharModalBtn()">
           ${isConsulte ? '💬 Orçamento' : '＋ Adicionar'}
         </button>
       </div>
     </div>`;
   }).join('');
-
-  document.getElementById('modalOverlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
 }
 
 function alterarModalQtd(i, delta) {
@@ -753,23 +924,35 @@ function addRapido(e, id) {
   addCarrinho(id, 0);
 }
 
-function addCarrinho(id, precoIdx, qtd) {
+function addCarrinho(id, precoIdx, qtd, varianteIdx) {
   qtd = qtd || 1;
   const p = PRODUTOS.find(x => x.id === id);
   if (!p) return;
-  const pr = p.precos[precoIdx];
-  const existente = carrinho.find(i => i.id === id && i.tam === pr[0]);
+
+  let pr, nomeItem, imgItem;
+  if (typeof varianteIdx === 'number' && p.variantes) {
+    const v = p.variantes[varianteIdx];
+    pr = v.precos[precoIdx];
+    nomeItem = `${p.nome} - ${v.nome}`;
+    imgItem = v.img || p.img;
+  } else {
+    pr = p.precos[precoIdx];
+    nomeItem = p.nome;
+    imgItem = p.img;
+  }
+
+  const existente = carrinho.find(i => i.id === id && i.tam === pr[0] && i.nome === nomeItem);
   if (existente) {
     existente.qtd += qtd;
   } else {
     carrinho.push({
-      id, nome: p.nome, tam: pr[0], preco: pr[1], img: p.img, qtd,
+      id, nome: nomeItem, tam: pr[0], preco: pr[1], img: imgItem, qtd,
       uid: Date.now() + Math.random()
     });
   }
   salvarCarrinho();
   atualizarBadge();
-  showToast(`${p.nome} adicionado ✓`);
+  showToast(`${nomeItem} adicionado ✓`);
 }
 
 function alterarQtdCarrinho(uid, delta) {
