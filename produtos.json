@@ -304,8 +304,25 @@
     "nome": "Limpador Perfumado",
     "sub": "Desinfetante e Limpador Multiuso",
     "desc": "Limpa, desinfeta e perfuma pisos, bancadas e superfícies em geral. Escolha a fragrância ao adicionar ao pedido.",
-    "img": "campar_img/campdesin_eucalipto.jpg",
+    "img": "campar_img/limpador_talco.jpg",
     "variantes": [
+      {
+        "nome": "Talco",
+        "desc": "Limpeza eficiente com a fragrância clássica, suave e aconchegante de talco. Muito usado em ambientes residenciais e comerciais que buscam limpeza real com perfume que agrada a todos.",
+        "img": "campar_img/limpador_talco.jpg",
+        "precos": [
+          [
+            "2L",
+            "R$ 14,99",
+            "COD 20337"
+          ],
+          [
+            "5L",
+            "R$ 27,99",
+            ""
+          ]
+        ]
+      },
       {
         "nome": "Eucalipto",
         "desc": "Desinfetante de uso geral com aroma fresco de eucalipto. Limpa, desinfeta e perfuma ambientes domésticos, comerciais e industriais. Ação bactericida com fragrância que refresca qualquer espaço.",
@@ -371,23 +388,6 @@
             "5L",
             "R$ 27,99",
             "COD 20434"
-          ]
-        ]
-      },
-      {
-        "nome": "Talco",
-        "desc": "Limpeza eficiente com a fragrância clássica, suave e aconchegante de talco. Muito usado em ambientes residenciais e comerciais que buscam limpeza real com perfume que agrada a todos.",
-        "img": "campar_img/limpador_talco.jpg",
-        "precos": [
-          [
-            "2L",
-            "R$ 14,99",
-            "COD 20337"
-          ],
-          [
-            "5L",
-            "R$ 27,99",
-            ""
           ]
         ]
       },
