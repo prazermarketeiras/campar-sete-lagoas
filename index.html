@@ -35,7 +35,7 @@
     display:flex;align-items:center;justify-content:center;
     box-shadow:0 3px 10px rgba(0,0,0,.18);
   }
-  .logo-wrap img{height:38px;object-fit:contain;display:block}
+  .logo-wrap img{height:52px;object-fit:contain;display:block}
   .header-title{flex:1;text-align:center;min-width:0}
   .header-title h1{
     font-size:.92rem;font-weight:700;color:#fff;line-height:1.25;
@@ -321,7 +321,7 @@
     display:inline-flex;background:#fff;border-radius:14px;padding:8px 16px;
     margin-bottom:22px;box-shadow:0 3px 10px rgba(0,0,0,.18);
   }
-  .footer-logo img{height:40px;object-fit:contain;display:block}
+  .footer-logo img{height:58px;object-fit:contain;display:block}
   .footer-info{
     display:flex;flex-direction:column;gap:10px;align-items:stretch;
     max-width:420px;margin:0 auto;
@@ -522,6 +522,22 @@
 
 <script>
 let PRODUTOS = [];
+
+// ── LINK POR VENDEDOR (?v=slug direciona o WhatsApp) ───────────
+const VENDEDORES = {
+  bruna: "5531995049690",
+  leo: "5531995049690",
+  vendedor1: "5531995049690",
+  vendedor2: "5531995049690",
+  vendedor3: "5531995049690",
+};
+const WHATSAPP_PADRAO = "5531995049690";
+
+function obterWhatsAppAtivo() {
+  const params = new URLSearchParams(location.search);
+  const v = (params.get('v') || '').toLowerCase();
+  return VENDEDORES[v] || WHATSAPP_PADRAO;
+}
 
 // ── MODO DE EDIÇÃO (catálogo editável) ─────────────────────────
 // O token de publicação NUNCA fica gravado neste arquivo (o GitHub bloqueia
@@ -1150,13 +1166,13 @@ function enviarWA() {
   }
   msg += "\n\nPoderia confirmar disponibilidade e formas de entrega? Obrigado(a)!";
 
-  const url = `https://wa.me/5531995049690?text=${encodeURIComponent(msg)}`;
+  const url = `https://wa.me/${obterWhatsAppAtivo()}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 }
 
 function abrirWhatsAppGeral() {
   const msg = "Olá! Vim pelo catálogo da Construmaq e gostaria de tirar uma dúvida.";
-  window.open(`https://wa.me/5531995049690?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/${obterWhatsAppAtivo()}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 // ── TOAST ────────────────────────────────────────────────────
