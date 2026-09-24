@@ -22,26 +22,22 @@
 
   /* ── HEADER ── */
   header{
-    background:linear-gradient(135deg,var(--az) 0%,var(--az2) 100%);
+    background:#fff;
     padding:0;position:sticky;top:0;z-index:100;
-    box-shadow:0 2px 12px rgba(0,0,0,.25);
+    box-shadow:0 2px 14px rgba(13,49,135,.14);
   }
   .header-top{
     display:flex;align-items:center;justify-content:space-between;
-    padding:12px 16px;gap:12px;
+    padding:10px 16px;gap:12px;background:#fff;
   }
-  .logo-wrap{
-    background:#fff;border-radius:12px;padding:5px 9px;flex-shrink:0;
-    display:flex;align-items:center;justify-content:center;
-    box-shadow:0 3px 10px rgba(0,0,0,.18);
-  }
-  .logo-wrap img{height:52px;object-fit:contain;display:block}
+  .logo-wrap{flex-shrink:0;display:flex;align-items:center}
+  .logo-wrap img{height:58px;object-fit:contain;display:block}
   .header-title{flex:1;text-align:center;min-width:0}
   .header-title h1{
-    font-size:.92rem;font-weight:700;color:#fff;line-height:1.25;
+    font-size:.88rem;font-weight:800;color:var(--az);line-height:1.25;
     overflow-wrap:break-word;
   }
-  .header-title p{font-size:.72rem;color:#9CC4E4;margin-top:3px;letter-spacing:.02em}
+  .header-title p{font-size:.7rem;color:var(--ciano2);margin-top:3px;font-weight:600;letter-spacing:.03em}
   .cart-btn,.menu-btn{
     position:relative;background:var(--ciano);border:none;color:#fff;
     border-radius:50%;width:44px;height:44px;font-size:1.2rem;
@@ -50,7 +46,7 @@
     transition:transform .15s;
   }
   .cart-btn:active,.menu-btn:active{transform:scale(.92)}
-  .menu-btn{background:rgba(255,255,255,.15);box-shadow:none;border:1.5px solid rgba(255,255,255,.25)}
+  .menu-btn{background:var(--bg);color:var(--az);box-shadow:none;border:1.5px solid var(--borda)}
   .cart-badge{
     position:absolute;top:-4px;right:-4px;background:#FF3B3B;
     color:#fff;border-radius:50%;width:20px;height:20px;
@@ -312,36 +308,34 @@
 
   /* ── RODAPÉ ── */
   .site-footer{
-    background:linear-gradient(135deg,var(--az) 0%,var(--az2) 100%);
-    padding:36px 20px 96px;text-align:center;color:#fff;
-    border-radius:28px 28px 0 0;margin-top:8px;
-    box-shadow:0 -4px 20px rgba(0,0,0,.12);
+    background:#fff;
+    padding:38px 20px 100px;text-align:center;color:var(--texto);
+    border-radius:28px 28px 0 0;margin-top:10px;
+    box-shadow:0 -6px 24px rgba(13,49,135,.10);
   }
-  .footer-logo{
-    display:inline-flex;background:#fff;border-radius:14px;padding:8px 16px;
-    margin-bottom:22px;box-shadow:0 3px 10px rgba(0,0,0,.18);
-  }
-  .footer-logo img{height:58px;object-fit:contain;display:block}
+  .footer-logo{display:inline-flex;margin-bottom:20px}
+  .footer-logo img{height:64px;object-fit:contain;display:block}
   .footer-info{
     display:flex;flex-direction:column;gap:10px;align-items:stretch;
     max-width:420px;margin:0 auto;
   }
   .footer-item{
-    display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;
-    font-size:.85rem;opacity:.95;transition:opacity .2s,background .2s;
-    background:rgba(255,255,255,.08);border-radius:14px;padding:12px 16px;
+    display:flex;align-items:center;gap:12px;color:var(--texto);text-decoration:none;
+    font-size:.85rem;font-weight:600;transition:background .2s,border-color .2s;
+    background:var(--bg);border:1.5px solid var(--borda);border-radius:14px;padding:12px 16px;
     text-align:left;
   }
-  .footer-item:hover{opacity:1;background:rgba(255,255,255,.14)}
-  .footer-item em{font-style:italic;opacity:.8}
+  .footer-item:hover{background:#E4ECFC;border-color:var(--ciano)}
+  .footer-item em{font-style:italic;font-weight:400;color:var(--sub)}
   .footer-icon{
-    font-size:1.05rem;flex-shrink:0;width:32px;height:32px;border-radius:50%;
-    background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;
+    font-size:1rem;flex-shrink:0;width:34px;height:34px;border-radius:50%;
+    background:linear-gradient(135deg,var(--az) 0%,var(--az2) 100%);color:#fff;
+    display:flex;align-items:center;justify-content:center;
   }
   .footer-divider{
-    max-width:420px;margin:24px auto 0;border-top:1px solid rgba(255,255,255,.18);
+    max-width:420px;margin:26px auto 0;border-top:1px solid var(--borda);
   }
-  .footer-copy{padding-top:18px;font-size:.72rem;color:#9CC4E4;letter-spacing:.02em}
+  .footer-copy{padding-top:18px;font-size:.72rem;color:var(--sub);font-weight:700;letter-spacing:.03em}
 
   /* ── WHATSAPP FLUTUANTE ── */
   .wa-fab{
